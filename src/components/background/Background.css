@@ -1,0 +1,42 @@
+.Background {
+    background-color: #3A363F;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0px;
+    top: 0px;
+    z-index: -10;
+}
+
+.Circle {
+    position: absolute;
+
+    -webkit-filter:blur(300px);
+    -ms-filter:blur(300px);
+    filter:blur(300px);
+}
+
+#redCircle {
+    top: -294px;
+    left: -10%;
+    height: 746px;
+    width: 851px;
+    border-radius: 50%;
+    background-color: #E62044;
+}
+#blueCircle {
+    top: -249px;
+    right: 0%;
+    height: 774px;
+    width: 1174px;
+    border-radius: 50%;
+    background-color: #62C5E2;
+}
+#purpleCircle {
+    top: -370px;
+    left: 25%;
+    height: 632px;
+    width: 1200px;
+    border-radius: 50%;
+    background-color: #AA62E2;
+}
