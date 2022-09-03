@@ -1,3 +1,11 @@
+/* Name */
 h1 {
-    color: lightgrey;
+    color: white;
+    font-family: "JetBrainsMono Bold";
+    font-size: 80px;
+}
+
+h3 {
+    color: #62C5E2;
+    font-size: 36px;
 }
