@@ -1,11 +1,65 @@
-/* Name */
-h1 {
+/* Home Container */
+
+.Home {
+    position: relative;
+    top: 0;
+    left: 80px;
+    width: 100%;
+    height: 100%;
+}
+
+/* Logo on home page */
+.HomeLogo svg {
+    position: relative;
+    top: 75px;
+    width: 750px !important;
+}
+
+/* Texts */
+.Home h1 {
     color: white;
     font-family: "JetBrainsMono Bold";
     font-size: 80px;
+    width: 80%;
+    margin-top: 0;
+    margin-bottom: 0;
+
 }
 
-h3 {
+.Home h3 {
     color: #62C5E2;
     font-size: 36px;
+    width: 80%;
+    position: relative;
+    margin-top: 70px;
+    margin-bottom: 0px;
+
+}
+
+.Home h2 {
+    color: #9A9A9A;
+    font-size: 64px;
+    width: 80%;
+    position: relative;
+    margin-top: 10px;
+    margin-bottom: 40px;
+
+}
+
+.Home p {
+    color: #9A9A9A;
+    font-size: 32px;
+    width: 60%;
+    position: relative;
+    margin-bottom: 0;
+}
+
+a.internalLink {
+    color: #E62044;
+    text-decoration: none;
+}
+
+a.externalLink {
+    color:#62C5E2;
+    text-decoration: none;
 }
