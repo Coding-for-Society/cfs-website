@@ -1,0 +1,24 @@
+/* Navigation Bar */
+/* Navigation Bar Container */
+.NavigationBar {
+    position: absolute !important;
+    top:0px;
+    display: flex !important;
+    width: 100vw;
+    align-items: center;
+    justify-content:space-between;
+    z-index: 1000;
+}
+
+/* Navigation Bar Items */
+.NavLinks li {
+    list-style: none;
+    display: inline-block;
+    padding: 0 40px;
+}
+
+.NavLinks a {
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+}

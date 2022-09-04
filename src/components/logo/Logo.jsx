@@ -1,4 +1,3 @@
-
 function Logo(width, height) {
     return <svg
         id="Ebene_1"
