@@ -59,6 +59,6 @@ body {
 
 .Glitch {
     position: absolute;
-    background: linear-gradient(90deg, rgba(230, 32, 68, 0.7) 0%, rgba(170, 98, 226, 0.7) 55%, rgba(0, 212, 255, 0.7) 100%) fixed;
+    background: linear-gradient(90deg, rgba(230, 32, 68, 0.3) 0%, rgba(170, 98, 226, 0.3) 55%, rgba(0, 212, 255, 0.3) 100%) fixed;
     z-index: -2;
 }

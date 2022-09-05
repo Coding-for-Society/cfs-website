@@ -2,7 +2,8 @@ import './Background.css';
 import {useEffect, useRef} from "react";
 
 function createGlitches(glitchContainer) {
-
+    // Tutorial on the glitch effect (slightly changed to work in react)
+    // https://www.youtube.com/watch?v=CtmHKGX754s
     if(glitchContainer.current == null) {
         return;
     }
@@ -24,7 +25,7 @@ function createGlitches(glitchContainer) {
         glitch.style.top = Math.floor(Math.random()*100) + "vh";
         glitch.style.width = Math.floor(Math.random()*400) + "px";
         glitch.style.height = Math.floor(Math.random()*100) + "px";
-        //glitch.style.backgroundPosition = Math.floor(Math.random()*50) + "px";
+        glitch.style.backgroundPosition = Math.floor(Math.random()*500) + "px";
 
         // Add Glitch to HTML
         glitchContainer.current.appendChild(glitch);
@@ -36,9 +37,10 @@ function Background() {
     const glitchContainer = useRef();
 
     useEffect(() => {
+        createGlitches(glitchContainer);
         const glitchInterval = setInterval(
             () => {createGlitches(glitchContainer)
-            },1000);
+            },900);
 
         return () => clearInterval(glitchInterval);
     },[]);
