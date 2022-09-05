@@ -11,6 +11,10 @@
 }
 
 /* Navigation Bar Items */
+.NavLinks {
+    margin: 0 0 0 0;
+}
+
 .NavLinks li {
     list-style: none;
     display: inline-block;
@@ -21,4 +25,20 @@
     text-decoration: none;
     color: white;
     font-size: 20px;
+}
+.NavigationBar h1 {
+    margin: 0 0 0 0;
+}
+
+.NavigationBarSpace {
+    height: 20px;
+}
+
+.NavigationBar li[active="true"] .NavigationBarActive {
+    height: 5px;
+    background-color: #E62044;
+}
+
+.NavigationBar li[active="true"] a {
+    color: #E62044;
 }
