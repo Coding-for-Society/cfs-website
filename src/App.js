@@ -6,6 +6,7 @@ import {Home, NavigationBar} from "./components";
 // Libraries
 import {BrowserRouter, Route, Routes, Navigate} from "react-router-dom";
 
+// Comment added
 // Default React Component including a Router
 function App() {
     return (
@@ -19,8 +20,8 @@ function App() {
                     <Route path="/team" element={<h1>Team</h1>}/>
                     <Route path="/story" element={<h1>Story</h1>}/>
                     <Route path="/contact" element={<h1>COntact us</h1>}/>
-                    <Route path="/collaboration" element={<h1>Collab</h1>}/>
-                    {/* Default: redirect to home page, when a link is invalid */}
+                    <Route path="/collaboration" element={<h1>Collab</h1>}/>    
+		{/* Default: redirect to home page, when a link is invalid */}
                     <Route path="*" element={<Navigate to={"/"} replace={true}/>}/>
                 </Routes>
             </BrowserRouter>
