@@ -6,7 +6,7 @@ import {Home, NavigationBar} from "./components";
 // Libraries
 import {BrowserRouter, Route, Routes, Navigate} from "react-router-dom";
 
-// Comment added
+// Comment changed
 // Default React Component including a Router
 function App() {
     return (
