@@ -7,6 +7,7 @@ import {Home, NavigationBar} from "./components";
 import {BrowserRouter, Route, Routes, Navigate} from "react-router-dom";
 
 // Comment changed
+// Test
 // Default React Component including a Router
 function App() {
     return (
