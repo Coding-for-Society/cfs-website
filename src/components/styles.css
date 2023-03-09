@@ -1,0 +1,41 @@
+/* styles for FAQ component */
+/* format all FAQ elements like normal text */
+
+.faq-item {
+    font-size: 22px;
+    color: #01001D;
+    font-family: 'DM Sans', sans-serif;
+    margin-bottom: 10px;
+}
+
+.faq-question {
+    font-size: 22px;
+    color: #01001D;
+    font-family: 'DM Sans', sans-serif;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+/* make the FAQ icon smaller and gray */
+.faq-icon {
+    color: #BDBDBD;
+    font-size: 10px;
+    margin-right: 10px;
+}
+
+.faq-text {
+    font-size: 22px;
+    color: #01001D;
+    font-family: 'DM Sans', sans-serif;
+    flex-grow: 1;
+}
+
+.faq-answer {
+    font-size: 22px;
+    color: #01001D;
+    font-family: 'DM Sans', sans-serif;
+    margin-top: 10px;
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
