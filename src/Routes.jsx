@@ -4,6 +4,7 @@ import {
   Navigate,
   RouterProvider,
 } from "react-router-dom";
+import Home from "./pages/home/Home";
 
 export default function Routes() {
   const routes = createBrowserRouter([
@@ -42,7 +43,7 @@ export default function Routes() {
     },
     {
       path: "/home",
-      element: <h1>Home</h1>,
+      element: <Home />,
       children: [],
     },
     {
