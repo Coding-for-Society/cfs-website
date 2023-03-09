@@ -1,3 +1,9 @@
 #Software {
-  color: ;
+  color: var(--green);
+}
+
+.homeContainer h1,
+.homeContainer h2,
+.homeContainer p {
+  color: var(--beige);
 }

@@ -7,7 +7,7 @@ import "./style.css";
 
 function Home() {
   return (
-    <>
+    <div className="homeContainer">
       <div className="sloganContainer">
         <h1>
           We develop <span id="Software">software</span>
@@ -51,7 +51,7 @@ function Home() {
         </p>
         <ContactBubble />
       </div>
-    </>
+    </div>
   );
 }
 
