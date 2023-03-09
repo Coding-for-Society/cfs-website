@@ -2,6 +2,11 @@
 
 body {
   margin: 0;
+  --green: #6cef06;
+  --pink: #ff007a;
+  --dark-blue: #01001d;
+  --grey: #666666;
+  --beige: #fff1e9;
 }
 
 h1,

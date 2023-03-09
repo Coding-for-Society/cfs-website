@@ -10,7 +10,7 @@ function Home() {
     <>
       <div className="sloganContainer">
         <h1>
-          We develop <span id="software">software</span>
+          We develop <span id="Software">software</span>
           <br />
           for the good cause
         </h1>
