@@ -7,6 +7,7 @@ body {
   --dark-blue: #01001d;
   --grey: #666666;
   --beige: #fff1e9;
+  overflow-x: hidden;
 }
 
 h1,
