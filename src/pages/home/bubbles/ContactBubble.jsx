@@ -1,4 +1,4 @@
-const ReachBubble = (props) => (
+const ContactBubble = (props) => (
   <svg
     width={776}
     height={692}
@@ -13,4 +13,4 @@ const ReachBubble = (props) => (
   </svg>
 );
 
-export default ReachBubble;
+export default ContactBubble;

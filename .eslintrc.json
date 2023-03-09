@@ -14,6 +14,8 @@
   "rules": {
     "quotes": "off",
     "react/react-in-jsx-scope": "off",
-    "react/jsx-one-expression-per-line": "off"
+    "react/jsx-one-expression-per-line": "off",
+    "react/function-component-definition": "off",
+    "react/jsx-props-no-spreading": "off"
   }
 }
