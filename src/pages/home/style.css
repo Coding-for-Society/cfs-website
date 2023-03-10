@@ -1,0 +1,101 @@
+#Software {
+  color: var(--green);
+}
+
+.homeContainer h1,
+.homeContainer h2,
+.homeContainer p {
+  color: var(--beige);
+}
+
+.sloganContainer {
+  position: absolute;
+  height: 900px;
+  top: 50px;
+}
+
+.sloganBubble {
+  position: absolute;
+  top: 0;
+  z-index: -1;
+}
+.sloganText {
+  padding-top: 280px;
+  padding-left: 80px;
+}
+
+.motivationContainer {
+  position: absolute;
+  top: 250px;
+  right: 0px;
+  width: 600px;
+}
+
+.motivationBubble {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: -1;
+}
+
+.motivationText {
+  padding-top: 330px;
+  padding-right: 50px;
+  padding-left: 20px;
+}
+
+.projectsContainer {
+  position: absolute;
+  top: 970px;
+}
+
+.projectsBubble {
+  position: absolute;
+  top: 0;
+  z-index: -1;
+}
+
+.projectsText {
+  padding-top: 70px;
+  padding-left: 80px;
+  width: 800px;
+}
+
+.teamContainer {
+  position: absolute;
+  top: 1900px;
+}
+
+.teamBubble {
+  position: absolute;
+  top: 0;
+  z-index: -1;
+}
+
+.teamText {
+  padding-top: 70px;
+  padding-left: 80px;
+  width: 600px;
+}
+
+.contactContainer {
+  position: absolute;
+  top: 2900px;
+  width: 100%;
+}
+
+.contactBubble {
+  position: absolute;
+  top: 0;
+  z-index: -1;
+  left: 50%;
+  margin-left: -400px;
+}
+
+.contactText {
+  width: 400px;
+  position: absolute;
+  top: 80px;
+  left: 50%;
+  margin-left: -200px;
+}
