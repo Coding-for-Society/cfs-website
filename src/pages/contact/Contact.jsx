@@ -1,5 +1,4 @@
 import ContactBubble from "./bubbles/ContactBubble";
-import SubmitButton from "./SubmitButton/SubmitButton";
 import "./style.css";
 
 function Contact() {
@@ -18,33 +17,20 @@ function Contact() {
           <div className="nameText">
             <p>Name:</p>
           </div>
-          <div className="nameInput">
-            <input type="text"/>
-          </div>
+          <input type="text" className="nameInput"/>
           <div className="emailText">
             <p>Email:</p>
           </div>
-          <div className="emailInput">
-            <input type="text"/>
-          </div>
+          <input type="text" className="emailInput"/>
           <div className="subjectText">
             <p>Subject:</p>
           </div>
-          <div className="subjectInput">
-            <input type="text"/>
-          </div>
+          <input type="text" className="subjectInput"/>
           <div className="messageText">
             <p>Your Message:</p>
           </div>
-          <div className="messageInput">
-            <input type="text"/>
-          </div>
-          <div className="submitBtn">
-            <div className="submitText">
-              <h3>Submit</h3>
-            </div>
-            <SubmitButton/>
-          </div>
+          <input type="text" className="messageInput"/>
+          <button type="submit" className="submitButton">Submit</button>
         </div>
       </div>
     </div>

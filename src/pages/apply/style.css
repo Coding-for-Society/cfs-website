@@ -8,27 +8,28 @@
   color: var(--beige);
 }
 
-.titleText {
-  padding-top: 280px;
+.titleText,
+.tswebpageText,
+.projecteduText,
+.cfswebpageText  {
   padding-left: 80px;
+  padding-right: 50px;
 }
 
 .positionsText,
-.tswebpageText,
-.projecteduText,
-.cfswebpageText,
 .faqText {
+  padding-top: 50px;
   padding-left: 80px;
 }
 
 .positionsBubble1 {
   position: absolute;
-  top: 0;
+  top: 430px;
   z-index: -1;
 }
 
 .positionsBubble2 {
   position: absolute;
-  top: 0;
+  top: 1300px;
   z-index: -1;
 }

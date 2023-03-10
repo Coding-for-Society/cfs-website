@@ -6,7 +6,7 @@ import './style.css';
 function Apply() {
   return (
     <div className="applyContainer">
-      <div className={"titleText"}>
+      <div className="titleText">
         <h1>Join us</h1>
         <p>Make a difference in the world with us!<br/>
           Found something you can see yourself working on in the list below? Or just considering an unsolicited

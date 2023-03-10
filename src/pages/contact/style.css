@@ -1,62 +1,111 @@
-.mainContainer p    {
-    color: var(--beige);
+.contactContainer {
+  position: absolute;
+  top: 0;
 }
 
 .titleContainer {
-    position: absolute;
-    height: 900px;
-    top: 50px;
+  position: absolute;
+  top: 50px;
+}
+
+.mainContainer p {
+  color: var(--beige);
 }
 
 .titleText {
-    padding-top: 280px;
-    padding-left: 80px;
+  padding-left: 80px;
 }
 
 .mainContainer {
-
+  position: absolute;
+  top: 300px;
 }
 
 .contactBubble {
-    position: absolute;
-    top: 0;
-    z-index: -1;
+  position: absolute;
+  top: 0;
+  z-index: -1;
 }
 
 .nameText {
-    position: absolute;
-    top: 0;
-    z-index: -1;
+  position: absolute;
+  top: 130px;
+  padding-left: 80px;
 }
 
 .nameInput {
-    position: absolute;
-    top: 0;
-    z-index: -1;
+  position: absolute;
+  top: 150px;
+  left: 400px;
+  width: 900px;
+  height: 36px;
+  border-radius: 30px;
+  border: none;
 }
 
 .emailText {
-    position: absolute;
-    top: 0;
-    z-index: -1;
+  position: absolute;
+  top: 220px;
+  padding-left: 80px;
 }
 
 .emailInput {
-    position: absolute;
-    top: 0;
-    z-index: -1;
+  position: absolute;
+  top: 240px;
+  left: 400px;
+  width: 900px;
+  height: 36px;
+  border-radius: 30px;
+  border: none;
 }
 
+.subjectText {
+  position: absolute;
+  top: 310px;
+  padding-left: 80px;
+}
 
+.subjectInput {
+  position: absolute;
+  top: 330px;
+  left: 400px;
+  width: 900px;
+  height: 36px;
+  border-radius: 30px;
+  border: none;
+}
 
-.submitBtn {
-    border: none;
-    color: var(--beige);
-    padding: 15px 32px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    margin: 4px 2px;
-    cursor: pointer;
+.messageText {
+  position: absolute;
+  top: 400px;
+  padding-left: 80px;
+  width: 200px;
+}
+
+.messageInput {
+  position: absolute;
+  top: 420px;
+  left: 400px;
+  width: 900px;
+  height: 200px;
+  border-radius: 24px;
+  border: none;
+}
+
+.submitButton {
+  position: absolute;
+  top: 670px;
+  left: 1170px;
+  border: none;
+  border-radius: 30px;
+  background-color: var(--beige);
+  color: var(--dark-blue);
+  padding: 6px 28px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 24px;
+  font-weight: 700;
+  margin: 4px 2px;
+  cursor: pointer;
 }
