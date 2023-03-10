@@ -6,6 +6,7 @@ import {
 } from "react-router-dom";
 import Home from "./pages/home/Home";
 import Apply from "./pages/apply/Apply";
+import Contact from "./pages/contact/Contact";
 
 export default function Routes() {
   const routes = createBrowserRouter([
@@ -69,7 +70,7 @@ export default function Routes() {
     },
     {
       path: "/contact",
-      element: <h1>Contact</h1>,
+      element: <Contact />,
       children: [],
     },
   ]);
