@@ -47,14 +47,35 @@ export function FAQTSWebsite() {
 export function FAQProjectEdu() {
   const faqs = [
     {
+      question: 'Education Consultant',
+      answer: 'Support us with conducting coding projects at schools. [TBD]',
+    },
+  ];
+  return FAQList(faqs);
+}
+
+export function FAQCFSWebsite() {
+  const faqs = [
+    {
+      question: 'Full Stack Developer',
+      answer: 'Can you see yourself extending and maintaining this website? Do you have basic knowledge in Javascript, HTML and SQL and are a quick learner? Then this one is for you!',
+    },
+    {
       question: 'Frontend Developer',
-      answer: 'Help us implement the Talente Spenden website concept using HTML and Javascript.',
+      answer: 'Help us implement our website prototype using HTML and Javascript. [TBD, just copy over some To-Dos from the Kanban board]',
     },
     {
       question: 'Backend Developer',
-      answer:
-        'Create and maintain the databases that power the Talente Spenden website.',
+      answer: 'Develop the SQL pipeline for this website and get practical experience with building a website.',
     },
+    {
+      question: 'Designer',
+      answer: 'Help us design the website and create a great user experience.',
+    },
+    {
+      question: 'HR Manager',
+      answer: 'You like socializing with people and discovering people’s talents? In this position, you help us look out for people that would be a great addition to our team.',
+    }
   ];
   return FAQList(faqs);
 }
@@ -82,5 +103,3 @@ export function FAQs() {
   ];
   return FAQList(faqs);
 }
-
-export default FAQList;

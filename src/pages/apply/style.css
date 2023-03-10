@@ -16,10 +16,15 @@
   padding-right: 50px;
 }
 
-.positionsText,
-.faqText {
+.positionsText  {
   padding-top: 50px;
   padding-left: 80px;
+}
+
+.faqText {
+  padding-top: 0;
+  padding-left: 80px;
+  padding-right: 50px;
 }
 
 .positionsBubble1 {
@@ -29,7 +34,6 @@
 }
 
 .positionsBubble2 {
-  position: absolute;
-  top: 1300px;
+  padding-top: 100px;
   z-index: -1;
 }

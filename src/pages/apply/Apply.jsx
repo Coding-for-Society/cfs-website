@@ -1,4 +1,4 @@
-import {FAQTSWebsite, FAQProjectEdu, FAQs} from "../../components/faqList/FAQList";
+import { FAQTSWebsite, FAQProjectEdu, FAQCFSWebsite, FAQs } from "../../components/faqList/FAQList";
 import ApplyBubble1 from "./bubbles/ApplyBubble1";
 import ApplyBubble2 from "./bubbles/ApplyBubble2";
 import './style.css';
@@ -28,7 +28,7 @@ function Apply() {
       <div className="cfswebpageText">
         <h3>Coding for Society Web Page</h3>
       </div>
-      <FAQProjectEdu/>
+      <FAQCFSWebsite/>
       <ApplyBubble2 className="positionsBubble2"/>
       <div className="faqText">
         <h2>FAQs</h2>

@@ -41,6 +41,9 @@
   height: 36px;
   border-radius: 30px;
   border: none;
+  font-size: 24px;
+  font-family: "Poppins", sans-serif;
+  padding-left: 18px;
 }
 
 .emailText {
@@ -57,6 +60,9 @@
   height: 36px;
   border-radius: 30px;
   border: none;
+  font-size: 24px;
+  font-family: "Poppins", sans-serif;
+  padding-left: 18px;
 }
 
 .subjectText {
@@ -73,6 +79,9 @@
   height: 36px;
   border-radius: 30px;
   border: none;
+  font-size: 24px;
+  font-family: "Poppins", sans-serif;
+  padding-left: 18px;
 }
 
 .messageText {
@@ -86,15 +95,19 @@
   position: absolute;
   top: 420px;
   left: 400px;
-  width: 900px;
-  height: 200px;
+  width: 884px;
+  height: 300px;
   border-radius: 24px;
   border: none;
+  font-size: 24px;
+  font-family: "Poppins", sans-serif;
+  padding: 18px;
+  resize: none;
 }
 
 .submitButton {
   position: absolute;
-  top: 670px;
+  top: 800px;
   left: 1170px;
   border: none;
   border-radius: 30px;

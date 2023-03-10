@@ -29,7 +29,7 @@ function Contact() {
           <div className="messageText">
             <p>Your Message:</p>
           </div>
-          <input type="text" className="messageInput"/>
+          <textarea className="messageInput"/>
           <button type="submit" className="submitButton">Submit</button>
         </div>
       </div>
