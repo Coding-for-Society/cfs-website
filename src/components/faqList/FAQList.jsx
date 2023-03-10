@@ -1,5 +1,5 @@
 import {useState} from 'react';
-import './styles.css'; //import css file for styling
+import './style.css'; //import css file for styling
 
 function FAQList(faqs) {
   const [activeIndex, setActiveIndex] = useState(null); // state to store the active index of the clicked question
