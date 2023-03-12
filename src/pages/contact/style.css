@@ -1,9 +1,8 @@
-.contactContainer {
-  position: absolute;
-  top: 0;
+.contactpageContainer {
+  width: 100%;
 }
 
-.titleContainer {
+.contacttitleContainer {
   position: absolute;
   top: 50px;
 }
@@ -12,16 +11,17 @@
   color: var(--beige);
 }
 
-.titleText {
+.contacttitleText {
   padding-left: 80px;
 }
 
 .mainContainer {
   position: absolute;
   top: 300px;
+  width: 100%;
 }
 
-.contactBubble {
+.contactpageBubble {
   position: absolute;
   top: 0;
   z-index: -1;

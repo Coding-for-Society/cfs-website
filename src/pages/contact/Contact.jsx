@@ -3,9 +3,9 @@ import "./style.css";
 
 function Contact() {
   return (
-    <div className="contactContainer">
-      <div className="titleContainer">
-        <div className="titleText">
+    <div className="contactpageContainer">
+      <div className="contacttitleContainer">
+        <div className="contacttitleText">
           <h1>Contact us</h1>
           <p>
             Feel free to contact us! We are always open to new project ideas,
@@ -13,23 +13,15 @@ function Contact() {
           </p>
         </div>
         <div className="mainContainer">
-          <ContactBubble className="contactBubble"/>
-          <div className="nameText">
-            <p>Name:</p>
-          </div>
-          <input type="text" className="nameInput"/>
-          <div className="emailText">
-            <p>Email:</p>
-          </div>
-          <input type="text" className="emailInput"/>
-          <div className="subjectText">
-            <p>Subject:</p>
-          </div>
-          <input type="text" className="subjectInput"/>
-          <div className="messageText">
-            <p>Your Message:</p>
-          </div>
-          <textarea className="messageInput"/>
+          <ContactBubble className="contactpageBubble" />
+          <p className="nameText">Name:</p>
+          <input type="text" className="nameInput" />
+          <p className="emailText">Email:</p>
+          <input type="text" className="emailInput" />
+          <p className="subjectText">Subject:</p>
+          <input type="text" className="subjectInput" />
+          <p className="messageText">Your Message:</p>
+          <textarea className="messageInput" />
           <button type="submit" className="submitButton">Submit</button>
         </div>
       </div>
