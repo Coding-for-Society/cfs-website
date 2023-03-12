@@ -4,6 +4,8 @@ import ContactBubble from "./bubbles/ContactBubble";
 import SloganBubble from "./bubbles/SloganBubble";
 import TeamBubble from "./bubbles/TeamBubble";
 import "./style.css";
+import ProjectSlider from "../../components/projectSlider/ProjectSlider";
+import { projectConfig } from "./config";
 
 function Home() {
   return (
@@ -40,7 +42,7 @@ function Home() {
             together with other social teams and realize our own ideas.
           </p>
         </div>
-
+        <ProjectSlider projects={projectConfig} />
         <ProjectBubble className="projectsBubble" />
       </div>
       <div className="teamContainer">

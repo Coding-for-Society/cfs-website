@@ -1,0 +1,10 @@
+.projectSliderEntryList {
+  display: flex;
+  flex-direction: row;
+}
+
+.projectSliderEntryList li {
+  list-style: none;
+  padding-left: 30px;
+  padding-right: 30px;
+}
