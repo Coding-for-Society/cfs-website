@@ -24,7 +24,25 @@ export const projectConfig = [
     id: "hackatum22",
     name: "HackaTUM 2022",
     image: ProjectImage,
-    desc: "Together we participated in the renowned HackaTUM 2022. We are very proud to score the second place in one of the sponsor challenge.",
+    desc: "Together we participated in the HackaTUM 2022. We are proud to score the second place in one of the sponsor challenge.",
+  },
+  {
+    id: "hackatum22",
+    name: "HackaTUM 2022",
+    image: ProjectImage,
+    desc: "Together we participated in the HackaTUM 2022. We are proud to score the second place in one of the sponsor challenge.",
+  },
+  {
+    id: "hackatum22",
+    name: "HackaTUM 2022",
+    image: ProjectImage,
+    desc: "Together we participated in the HackaTUM 2022. We are proud to score the second place in one of the sponsor challenge.",
+  },
+  {
+    id: "hackatum22",
+    name: "HackaTUM 2022",
+    image: ProjectImage,
+    desc: "Together we participated in the HackaTUM 2022. We are proud to score the second place in one of the sponsor challenge.",
   },
 ];
 

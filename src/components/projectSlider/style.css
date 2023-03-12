@@ -8,3 +8,8 @@
   padding-left: 30px;
   padding-right: 30px;
 }
+
+.projectSlider {
+  overflow-x: scroll;
+  width: 100vw;
+}
