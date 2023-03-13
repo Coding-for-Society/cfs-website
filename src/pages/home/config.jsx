@@ -1,5 +1,6 @@
 // Mock Config until database is integrated
 import ProjectImage from "./img/SampleProject.jpg";
+import TeamImage from "./img/SampleTeamMember.png";
 
 export const projectConfig = [
   {
@@ -46,4 +47,47 @@ export const projectConfig = [
   },
 ];
 
-export const teamConfig = [];
+export const teamConfig = [
+  {
+    id: "jonasitt",
+    name: "Jonas Itt",
+    role: "Founder",
+    image: TeamImage,
+    desc: "I want to use my skills for the good. This is why...",
+  },
+  {
+    id: "nickalexanderhuebner",
+    name: "Nick Alexander Hübner",
+    role: "Founder",
+    image: TeamImage,
+    desc: "My motivation is to gain experience and do you good at the same ...",
+  },
+  {
+    id: "jakobguenther",
+    name: "Jakob Günther",
+    role: "Team Member",
+    image: TeamImage,
+    desc: "My motivation is to gain experience and do you good at the same ...",
+  },
+  {
+    id: "nhatnguyen",
+    name: "Nhat Nguyen",
+    role: "Founder",
+    image: TeamImage,
+    desc: "My motivation is to gain experience and do you good at the same ...",
+  },
+  {
+    id: "haoruiharryzheng",
+    name: "Haorui Harry Zheng",
+    role: "Founder",
+    image: TeamImage,
+    desc: "My motivation is to gain experience and do you good at the same ...",
+  },
+  {
+    id: "daniellindner",
+    name: "Daniel Linder",
+    role: "Team Member",
+    image: TeamImage,
+    desc: "My motivation is to gain experience and do you good at the same ...",
+  },
+];
