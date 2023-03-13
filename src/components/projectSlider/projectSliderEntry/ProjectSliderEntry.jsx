@@ -1,16 +1,12 @@
 import "./style.css";
-import { useNavigate } from "react-router-dom";
+import { Link } from "react-router-dom";
 import { useState } from "react";
+import { motion } from "framer-motion";
 
 export default function ProjectSliderEntry(props) {
   const { project } = props;
-  const navigate = useNavigate();
 
   const [descActive, setDescAvtive] = useState(false);
-
-  const handleNavigate = () => {
-    navigate(`/projects/${project.id}`);
-  };
 
   const handleEnter = () => {
     setDescAvtive(true);
@@ -21,26 +17,23 @@ export default function ProjectSliderEntry(props) {
   };
 
   return (
-    <div
+    <motion.div
       className="projectSliderEntry"
-      onClick={handleNavigate}
-      onKeyUp={handleNavigate}
       role="button"
       tabIndex={0}
       onMouseEnter={handleEnter}
       onMouseLeave={handleLeave}
     >
       <div className="imageOverlay">
-        {" "}
-        <p
-          className={
-            descActive
-              ? "projectSliderEntryDesc"
-              : "projectSliderEntryDesc hidden"
-          }
-        >
-          {project.desc}
-        </p>{" "}
+        {descActive && (
+          <Link
+            draggable="false"
+            className="readMore"
+            to={`/projects/${project.id}`}
+          >
+            Find out more
+          </Link>
+        )}
       </div>
       <div
         style={{ backgroundImage: `url(${project.image})` }}
@@ -48,6 +41,6 @@ export default function ProjectSliderEntry(props) {
         className="projectSliderEntryImg"
       />
       <h3 className="projectSliderEntryText">{project.name}</h3>
-    </div>
+    </motion.div>
   );
 }

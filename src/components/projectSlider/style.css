@@ -1,15 +1,25 @@
 .projectSliderEntryList {
   display: flex;
   flex-direction: row;
-}
-
-.projectSliderEntryList li {
-  list-style: none;
-  padding-left: 30px;
-  padding-right: 30px;
+  padding: 20px 80px;
 }
 
 .projectSlider {
-  overflow-x: scroll;
+  display: flex;
+  width: 100%;
+}
+.projectSliderEntryList li {
+  list-style: none;
+  padding-left: 0px;
+  padding-right: 40px;
+}
+
+.outerProjectSlider {
   width: 100vw;
+  cursor: grab;
+  overflow: hidden;
+}
+
+.lastSliderItem {
+  padding-right: 0 !important;
 }

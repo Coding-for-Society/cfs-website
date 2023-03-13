@@ -4,6 +4,7 @@
   overflow: hidden;
   background-color: var(--beige);
   position: relative;
+  border: 4px solid var(--dark-blue);
 }
 
 .projectSliderEntry h3 {
@@ -19,19 +20,19 @@
 }
 
 .projectSliderEntry:hover {
-  background-color: var(--pink);
-  cursor: pointer;
+  background-color: var(--green);
+  border: 4px solid var(--green);
 }
 
-.projectSliderEntry:hover h3 {
+.readMore {
+  text-decoration: none;
   color: var(--beige);
+  font-size: 24px;
+  font-weight: 600;
 }
 
-.projectSliderEntry p {
-  position: absolute;
-  left: 20px;
-  top: 0px;
-  z-index: 10;
+.readMore:hover {
+  color: var(--green);
 }
 
 .hidden {
@@ -44,8 +45,11 @@
   height: 70%;
   background-color: #01001d00;
   z-index: 1;
+  justify-content: center;
+  display: flex;
+  align-items: center;
 }
 
 .projectSliderEntry:hover .imageOverlay {
-  background-color: rgba(1, 0, 29, 0.716);
+  background-color: rgba(1, 0, 29, 0.536);
 }
