@@ -5,7 +5,8 @@ import SloganBubble from "./bubbles/SloganBubble";
 import TeamBubble from "./bubbles/TeamBubble";
 import "./style.css";
 import ProjectSlider from "../../components/projectSlider/ProjectSlider";
-import { projectConfig } from "./config";
+import { projectConfig, teamConfig } from "./config";
+import TeamSlider from "../../components/teamSlider/TeamSlider";
 
 function Home() {
   return (
@@ -53,6 +54,7 @@ function Home() {
             Technical University of Munich (TUM).
           </p>
         </div>
+        <TeamSlider team={teamConfig} />
         <TeamBubble className="teamBubble" />
       </div>
       <div className="contactContainer">

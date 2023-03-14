@@ -1,6 +1,7 @@
 // Mock Config until database is integrated
 import ProjectImage from "./img/SampleProject.jpg";
 import TeamImage from "./img/SampleTeamMember.png";
+import TeamImage2 from "./img/SampleTeamMember2.png";
 
 export const projectConfig = [
   {
@@ -59,7 +60,7 @@ export const teamConfig = [
     id: "nickalexanderhuebner",
     name: "Nick Alexander Hübner",
     role: "Founder",
-    image: TeamImage,
+    image: TeamImage2,
     desc: "My motivation is to gain experience and do you good at the same ...",
   },
   {
