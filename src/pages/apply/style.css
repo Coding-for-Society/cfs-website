@@ -1,0 +1,39 @@
+.applyContainer h1,
+.applyContainer h3,
+.applyContainer p {
+  color: var(--dark-blue);
+}
+
+.applyContainer h2 {
+  color: var(--beige);
+}
+
+.applytitleText,
+.tswebpageText,
+.projecteduText,
+.cfswebpageText  {
+  margin-left: 80px;
+  margin-right: 50px;
+}
+
+.positionsText  {
+  margin-top: 50px;
+  margin-left: 80px;
+}
+
+.faqText {
+  padding-top: 0;
+  padding-left: 80px;
+  padding-right: 50px;
+}
+
+.positionsBubble1 {
+  position: absolute;
+  top: 350px;
+  z-index: -1;
+}
+
+.positionsBubble2 {
+  padding-top: 100px;
+  z-index: -1;
+}
