@@ -68,8 +68,8 @@
 
 .teamBubble {
   position: absolute;
-  top: 0;
-  z-index: -1;
+  top: 20px;
+  z-index: -4;
 }
 
 .teamText {

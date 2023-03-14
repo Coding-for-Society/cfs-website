@@ -35,7 +35,7 @@ export default function TeamSliderEntry(props) {
         {descActive && (
           <motion.div
             key={member.id}
-            className="teamBubble1"
+            className="memberBubbleContainer"
             initial={{ opacity: 0, scale: 0 }}
             animate={{ opacity: 1, scale: 1 }}
             exit={{ opactiy: 0, scale: 0 }}
