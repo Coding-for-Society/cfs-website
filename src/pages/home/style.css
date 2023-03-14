@@ -99,3 +99,13 @@
   left: 50%;
   margin-left: -200px;
 }
+
+#backgroundWave {
+  position: absolute;
+  width: 100%;
+  top: 0px;
+  transform: rotate(180deg);
+  left: 0;
+  z-index: -20;
+  transition: height 0.25s linear;
+}

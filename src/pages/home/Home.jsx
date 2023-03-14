@@ -1,16 +1,44 @@
+import Wave from "react-wavify";
+import { useEffect, useState } from "react";
+import "./style.css";
 import MotivationBubble from "./bubbles/MotivationBubble";
 import ProjectBubble from "./bubbles/ProjectsBubble";
 import ContactBubble from "./bubbles/ContactBubble";
 import SloganBubble from "./bubbles/SloganBubble";
 import TeamBubble from "./bubbles/TeamBubble";
-import "./style.css";
 import ProjectSlider from "../../components/projectSlider/ProjectSlider";
 import { projectConfig, teamConfig } from "./config";
 import TeamSlider from "../../components/teamSlider/TeamSlider";
 
 function Home() {
+  const [scroll, setScroll] = useState(0);
+
+  const handleScroll = () => {
+    setScroll(window.pageYOffset);
+  };
+
+  useEffect(() => {
+    window.addEventListener("scroll", handleScroll, { passive: true });
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  });
+
   return (
     <div className="homeContainer">
+      <Wave
+        id="backgroundWave"
+        fill="#fff1e9"
+        paused={false}
+        options={{
+          height: 100,
+          amplitude: 50,
+          speed: 0.3,
+          points: 5,
+        }}
+        style={{ height: `${600 + scroll}px` }}
+      />
       <div className="sloganContainer">
         <div className="sloganText">
           <h1>
