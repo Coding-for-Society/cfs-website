@@ -16,6 +16,14 @@
   margin-right: 50px;
 }
 
+.positionsTitleContainer {
+  position: relative;
+}
+
+.applyTitleContainer {
+  position: relative;
+}
+
 .positionsText  {
   margin-top: 50px;
   margin-left: 80px;
@@ -29,11 +37,12 @@
 
 .positionsBubble1 {
   position: absolute;
-  top: 350px;
+  top: -30px;
   z-index: -1;
 }
 
 .positionsBubble2 {
-  padding-top: 100px;
+  position: absolute;
+  top: -20px;
   z-index: -1;
 }

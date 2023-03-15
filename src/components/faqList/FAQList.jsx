@@ -1,7 +1,8 @@
 import { useState } from 'react';
 import './style.css';
 
-function FAQList(faqs) {
+function FAQList(props) {
+  const { faqs } = props;
   // state to store the active index of the clicked question
   const [activeIndex, setActiveIndex] = useState(null);
 
@@ -13,8 +14,8 @@ function FAQList(faqs) {
   return (
     <div className="faq-list">
       {faqs.map((faq, index) => (
-        <div className="faq-item" key={index}>
-          <div className="faq-question" onClick={() => handleClick(index)}>
+        <div className="faq-item" key={faq.id}>
+          <div className="faq-question" role="button" onClick={() => handleClick(index)} onKeyUp={() => handleClick(index)} tabIndex={0}>
             <div className="faq-icon">
               {activeIndex === index ? (
                 <span>&#x25BC;</span>

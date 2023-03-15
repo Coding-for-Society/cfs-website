@@ -16,16 +16,20 @@ function Apply() {
           Great! Just fill in this form and we will get back to you as soon as possible.
         </p>
       </div>
-      <h2 className="positionsText">Open positions</h2>
-      <ApplyBubble1 className="positionsBubble1" />
+      <div className="positionsTitleContainer">
+        <h2 className="positionsText">Open positions</h2>
+        <ApplyBubble1 className="positionsBubble1" />
+      </div>
       <h3 className="tswebpageText">Talente Spenden Web Page</h3>
       <FAQTSWebsite />
       <h3 className="projecteduText">Project: Education</h3>
       <FAQProjectEdu />
       <h3 className="cfswebpageText">Coding for Society Web Page</h3>
       <FAQCFSWebsite />
-      <ApplyBubble2 className="positionsBubble2" />
-      <h2 className="faqText">FAQs</h2>
+      <div className="applyTitleContainer">
+        <ApplyBubble2 className="positionsBubble2" />
+        <h2 className="faqText">FAQs</h2>
+      </div>
       <FAQs />
     </div>
   );
