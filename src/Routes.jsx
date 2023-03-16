@@ -4,6 +4,8 @@ import {
   Navigate,
   RouterProvider,
 } from "react-router-dom";
+import Apply from "./pages/apply/Apply";
+import Contact from "./pages/contact/Contact";
 
 export default function Routes() {
   const routes = createBrowserRouter([
@@ -62,12 +64,12 @@ export default function Routes() {
     },
     {
       path: "/apply",
-      element: <h1>Apply</h1>,
+      element: <Apply />,
       children: [],
     },
     {
       path: "/contact",
-      element: <h1>Contact</h1>,
+      element: <Contact />,
       children: [],
     },
   ]);
