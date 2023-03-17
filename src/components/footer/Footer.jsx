@@ -24,7 +24,7 @@ function Footer() {
         <div className="footerColumn">
           <h3 className="contactText">Contact</h3>
           <ul>
-            <li><Link to="mailto:kontakt@codingforsociety.com" className="mailLink">E-Mail</Link></li>
+            <li><Link to="mailto:hello@codingforsociety.com" className="mailLink">E-Mail</Link></li>
             <li><Link to="https://www.instagram.com" className="instagramLink">Instagram</Link></li>
             <li><Link to="https://www.linkedin.com/company/coding-for-society/" className="linkedinLink">Linkedin</Link></li>
           </ul>
