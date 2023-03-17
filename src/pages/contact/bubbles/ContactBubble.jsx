@@ -1,8 +1,8 @@
 const ContactBubble = (props) => (
   <svg
     width={1918}
-    height={1100}
-    viewBox="0 0 1918 1100"
+    height={1262}
+    viewBox="0 0 1918 1262"
     fill="none"
     xmlns="http://www.w3.org/2000/svg"
     {...props}

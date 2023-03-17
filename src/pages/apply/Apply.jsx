@@ -4,6 +4,7 @@ import {
 import ApplyBubble1 from "./bubbles/ApplyBubble1";
 import ApplyBubble2 from "./bubbles/ApplyBubble2";
 import './style.css';
+import Footer from "../../components/footer/Footer";
 
 function Apply() {
   return (
@@ -31,6 +32,7 @@ function Apply() {
         <h2 className="faqText">FAQs</h2>
       </div>
       <FAQs />
+      <Footer />
     </div>
   );
 }
