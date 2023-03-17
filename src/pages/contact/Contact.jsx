@@ -1,5 +1,6 @@
 import ContactBubble from "./bubbles/ContactBubble";
 import "./style.css";
+import Footer from "../../components/footer/Footer";
 
 function Contact() {
   return (
@@ -12,7 +13,7 @@ function Contact() {
         </p>
       </div>
       <div className="mainContainer">
-        <ContactBubble className="contactpageBubble" />
+        <ContactBubble className="contactpageBubble" preserveAspectRatio="none" />
         <p className="nameText">Name:</p>
         <input type="text" className="nameInput" />
         <p className="emailText">Email:</p>
@@ -23,6 +24,7 @@ function Contact() {
         <textarea className="messageInput" />
         <button type="submit" className="submitButton">Submit</button>
       </div>
+      <Footer />
     </div>
   );
 }

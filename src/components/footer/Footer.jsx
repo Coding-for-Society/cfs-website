@@ -38,7 +38,7 @@ function Footer() {
           </ul>
         </div>
       </div>
-      <FooterBubble className="footerBubble" />
+      <FooterBubble className="footerBubble" preserveAspectRatio="none" />
     </footer>
   );
 }
