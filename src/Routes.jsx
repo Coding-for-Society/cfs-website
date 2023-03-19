@@ -4,6 +4,7 @@ import {
   Navigate,
   RouterProvider,
 } from "react-router-dom";
+import Home from "./pages/home/Home";
 import Apply from "./pages/apply/Apply";
 import Contact from "./pages/contact/Contact";
 
@@ -44,7 +45,7 @@ export default function Routes() {
     },
     {
       path: "/home",
-      element: <h1>Home</h1>,
+      element: <Home />,
       children: [],
     },
     {
