@@ -1,0 +1,130 @@
+.contactpageContainer {
+  width: 100%;
+}
+
+.contacttitleContainer {
+  position: absolute;
+  top: 0;
+}
+
+.mainContainer p {
+  color: var(--beige);
+}
+
+.contacttitleText {
+  padding-left: 80px;
+}
+
+.mainContainer {
+  position: relative;
+  top: 30px;
+  width: 100vw;
+}
+
+.contactpageBubble {
+  position: relative;
+  height: 1200px;
+  width: 100vw;
+  top: 0;
+  z-index: -1;
+}
+
+.nameText {
+  position: absolute;
+  top: 150px;
+  padding-left: 80px;
+}
+
+.nameInput {
+  position: absolute;
+  top: 170px;
+  left: 400px;
+  width: 60vw;
+  height: 36px;
+  border-radius: 30px;
+  border: none;
+  font-size: 24px;
+  font-family: "Poppins", sans-serif;
+  padding-left: 18px;
+}
+
+.emailText {
+  position: absolute;
+  top: 240px;
+  padding-left: 80px;
+}
+
+.emailInput {
+  position: absolute;
+  top: 260px;
+  left: 400px;
+  width: 60vw;
+  height: 36px;
+  border-radius: 30px;
+  border: none;
+  font-size: 24px;
+  font-family: "Poppins", sans-serif;
+  padding-left: 18px;
+}
+
+.subjectText {
+  position: absolute;
+  top: 330px;
+  padding-left: 80px;
+}
+
+.subjectInput {
+  position: absolute;
+  top: 350px;
+  left: 400px;
+  width: 60vw;
+  height: 36px;
+  border-radius: 30px;
+  border: none;
+  font-size: 24px;
+  font-family: "Poppins", sans-serif;
+  padding-left: 18px;
+}
+
+.messageText {
+  position: absolute;
+  top: 420px;
+  padding-left: 80px;
+  width: 200px;
+}
+
+.messageInput {
+  position: absolute;
+  top: 440px;
+  left: 400px;
+  width: calc(60vw - 17px);
+  height: 300px;
+  border-radius: 24px;
+  border: none;
+  font-size: 24px;
+  font-family: "Poppins", sans-serif;
+  padding: 18px;
+  resize: none;
+}
+
+.submitButton {
+  position: absolute;
+  top: 820px;
+  left: calc(60vw + 281px);
+  border: none;
+  border-radius: 30px;
+  background-color: var(--beige);
+  color: var(--dark-blue);
+  padding: 6px 28px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 24px;
+  font-weight: 700;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+.contactpageContainer footer {
+  top: -300px;
+}
