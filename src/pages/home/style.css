@@ -19,7 +19,7 @@
   top: 0;
   z-index: -1;
 }
-.sloganText {
+.sloganBubbleText {
   padding-top: 280px;
   padding-left: 80px;
 }
@@ -38,7 +38,7 @@
   z-index: -1;
 }
 
-.motivationText {
+.motivationBubbleText {
   padding-top: 330px;
   padding-right: 50px;
   padding-left: 20px;
@@ -55,7 +55,7 @@
   z-index: -1;
 }
 
-.projectsText {
+.projectsBubbleText {
   padding-top: 70px;
   padding-left: 80px;
   width: 800px;
@@ -72,7 +72,7 @@
   z-index: -4;
 }
 
-.teamText {
+.teamBubbleText {
   padding-top: 70px;
   padding-left: 80px;
   width: 600px;
@@ -92,7 +92,7 @@
   margin-left: -400px;
 }
 
-.contactText {
+.contactBubbleText {
   width: 400px;
   position: absolute;
   top: 80px;

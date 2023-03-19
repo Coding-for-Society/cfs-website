@@ -61,7 +61,7 @@ function Home() {
         />
       </div>
       <div className="sloganContainer">
-        <div className="sloganText">
+        <div className="sloganBubbleText">
           <h1>
             We develop <span id="Software">software</span>
             <br />
@@ -71,7 +71,7 @@ function Home() {
         <SloganBubble className="sloganBubble" />
       </div>
       <div className="motivationContainer">
-        <div className="motivationText">
+        <div className="motivationBubbleText">
           <h2>Our motivation</h2>
           <p>
             As a student initiative Coding for Society aims for positive
@@ -88,7 +88,7 @@ function Home() {
         />
       </div>
       <div className="projectsContainer">
-        <div className="projectsText">
+        <div className="projectsBubbleText">
           <h2>Our latest projects</h2>
           <p>
             All of our projects focus on providing social value. We work
@@ -99,7 +99,7 @@ function Home() {
         <ProjectBubble className="projectsBubble" active={activeCount >= 3} />
       </div>
       <div className="teamContainer">
-        <div className="teamText">
+        <div className="teamBubbleText">
           <h2>Our Team</h2>
           <p>
             We are an interdisciplinary team of committed students of the
@@ -110,7 +110,7 @@ function Home() {
         <TeamBubble className="teamBubble" active={activeCount >= 4} />
       </div>
       <div className="contactContainer">
-        <div className="contactText">
+        <div className="contactBubbleText">
           <h2>Reach us</h2>
           <p>
             Feel free to contact us! We are always open to new project ideas,
