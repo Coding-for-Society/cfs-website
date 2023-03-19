@@ -112,10 +112,11 @@
 
 .waveContainer {
   position: absolute;
-  height: 100%;
   width: 100%;
   z-index: -10;
   overflow-anchor: none;
+  max-height: 3700px;
+  overflow: hidden;
 }
 
 .waveStatic {

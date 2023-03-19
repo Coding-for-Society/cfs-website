@@ -12,9 +12,25 @@ import TeamSlider from "../../components/teamSlider/TeamSlider";
 
 function Home() {
   const [scroll, setScroll] = useState(0);
+  const [activeCount, setActiveCount] = useState(1);
+
+  const activateBubbles = () => {
+    if (scroll <= 100) {
+      setActiveCount(1);
+    } else if (scroll <= 650) {
+      setActiveCount(2);
+    } else if (scroll <= 1500) {
+      setActiveCount(3);
+    } else if (scroll <= 2300) {
+      setActiveCount(4);
+    } else if (scroll <= 3000) {
+      setActiveCount(5);
+    }
+  };
 
   const handleScroll = () => {
     setScroll(window.pageYOffset);
+    activateBubbles();
   };
 
   useEffect(() => {
@@ -66,7 +82,10 @@ function Home() {
           </p>
         </div>
 
-        <MotivationBubble className="motivationBubble" />
+        <MotivationBubble
+          className="motivationBubble"
+          active={activeCount >= 2}
+        />
       </div>
       <div className="projectsContainer">
         <div className="projectsText">
@@ -77,7 +96,7 @@ function Home() {
           </p>
         </div>
         <ProjectSlider projects={projectConfig} />
-        <ProjectBubble className="projectsBubble" />
+        <ProjectBubble className="projectsBubble" active={activeCount >= 3} />
       </div>
       <div className="teamContainer">
         <div className="teamText">
@@ -88,7 +107,7 @@ function Home() {
           </p>
         </div>
         <TeamSlider team={teamConfig} />
-        <TeamBubble className="teamBubble" />
+        <TeamBubble className="teamBubble" active={activeCount >= 4} />
       </div>
       <div className="contactContainer">
         <div className="contactText">
@@ -99,7 +118,7 @@ function Home() {
           </p>
         </div>
 
-        <ContactBubble className="contactBubble" />
+        <ContactBubble className="contactBubble" active={activeCount >= 5} />
       </div>
     </div>
   );
