@@ -27,18 +27,20 @@ function Home() {
 
   return (
     <div className="homeContainer">
-      <Wave
-        id="backgroundWave"
-        fill="#fff1e9"
-        paused={false}
-        options={{
-          height: 100,
-          amplitude: 50,
-          speed: 0.3,
-          points: 5,
-        }}
-        style={{ height: `${600 + scroll}px` }}
-      />
+      <div className="waveContainer">
+        <div className="waveStatic" style={{ height: `${600 + scroll}px` }} />
+        <Wave
+          id="backgroundWave"
+          fill="#fff1e9"
+          paused={false}
+          options={{
+            height: 60,
+            amplitude: 50,
+            speed: 0.2,
+            points: 4,
+          }}
+        />
+      </div>
       <div className="sloganContainer">
         <div className="sloganText">
           <h1>
