@@ -107,6 +107,7 @@
   left: 0;
   margin-top: -10px;
   padding-top: 0;
+  color: var(--beige);
 }
 
 .waveContainer {
@@ -114,10 +115,11 @@
   height: 100%;
   width: 100%;
   z-index: -10;
+  overflow-anchor: none;
 }
 
 .waveStatic {
   background: var(--beige);
   width: 100%;
-  transition: height 0.3s linear;
+  transition: all 0.3s;
 }
