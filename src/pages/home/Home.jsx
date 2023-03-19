@@ -30,7 +30,7 @@ function Home() {
       <div className="waveContainer">
         <div
           className="waveStatic"
-          style={{ height: `${150 + (scroll / 2000) * 2400}px` }}
+          style={{ height: `${150 + (scroll / 2000) * 2350}px` }}
         />
         <Wave
           id="backgroundWave"
