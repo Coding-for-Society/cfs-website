@@ -18,6 +18,10 @@
   transition: color 0.1s linear;
 }
 
+.navBar h1::selection {
+  background-color: var(--green);
+}
+
 .navBar h1:hover {
   color: var(--pink);
 }

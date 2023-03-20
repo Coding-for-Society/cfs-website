@@ -43,6 +43,7 @@ function Home() {
 
   return (
     <div className="homeContainer">
+      <div className="homeContainerBackground" />
       <div className="waveContainer">
         <div
           className="waveStatic"
@@ -50,7 +51,7 @@ function Home() {
         />
         <Wave
           id="backgroundWave"
-          fill="#fff1e9 "
+          fill="#fff1e9"
           paused={false}
           options={{
             height: 60,
