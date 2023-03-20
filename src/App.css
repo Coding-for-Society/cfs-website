@@ -8,6 +8,7 @@ body {
   --grey: #666666;
   --beige: #fff1e9;
   overflow-x: hidden;
+  background-color: var(--beige);
 }
 
 h1,

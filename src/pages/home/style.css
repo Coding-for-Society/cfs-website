@@ -2,6 +2,12 @@
   color: var(--green);
 }
 
+.homeContainer {
+  position: relative;
+  height: 3750px;
+  margin-bottom: -250px;
+}
+
 .homeContainer h1,
 .homeContainer h2,
 .homeContainer p {
@@ -11,7 +17,7 @@
 .sloganContainer {
   position: absolute;
   height: 900px;
-  top: 50px;
+  top: 75px;
 }
 
 .sloganBubble {
@@ -115,7 +121,7 @@
   width: 100%;
   z-index: -10;
   overflow-anchor: none;
-  max-height: 3700px;
+  max-height: 3750px;
   overflow: hidden;
 }
 
@@ -123,4 +129,14 @@
   background: var(--beige);
   width: 100%;
   transition: all 0.3s;
+}
+
+.homeContainerBackground {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -20;
+  background-color: white;
 }
