@@ -68,3 +68,7 @@
 .navBarLinks a:hover {
   color: var(--pink);
 }
+
+.navBarLinks a::selection {
+  background-color: var(--green);
+}
