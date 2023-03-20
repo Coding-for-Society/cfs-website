@@ -1,10 +1,48 @@
 .navBar {
   position: absolute;
+  width: 100vw;
+  height: 180px;
+  display: flex;
+  justify-content: space-between;
+  z-index: 20;
   top: 0;
-  right: 0;
+  left: 0;
+}
+
+.navBar h1 {
+  margin-top: 0;
+  color: var(--dark-blue);
+  font-size: 32px;
+  padding-left: 15px;
+  padding-top: 50px;
+}
+
+.navBar a {
+  text-decoration: none;
 }
 
 .navBarBubble {
   position: absolute;
+  top: 0;
+  right: 0;
   z-index: -1;
+}
+
+.navBarLinks {
+  display: flex;
+  height: 100%;
+  padding-top: 50px;
+  padding-right: 45px;
+  margin-top: 0;
+}
+
+.navBarLinks li {
+  list-style: none;
+  padding: 0 25px;
+}
+
+.navBarLinks a {
+  color: var(--beige);
+  font-size: 22px;
+  font-weight: 600;
 }

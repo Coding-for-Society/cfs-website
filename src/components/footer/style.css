@@ -17,7 +17,7 @@ footer {
 .footerColumn h2,
 .footerColumn h3,
 .footerColumn a {
-  color: var(--beige)
+  color: var(--beige);
 }
 
 .logoColumn h2 {

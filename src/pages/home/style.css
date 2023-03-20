@@ -2,6 +2,11 @@
   color: var(--green);
 }
 
+.homeContainer {
+  position: relative;
+  height: 3500px;
+}
+
 .homeContainer h1,
 .homeContainer h2,
 .homeContainer p {
