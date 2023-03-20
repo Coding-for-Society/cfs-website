@@ -1,6 +1,7 @@
 .contactpageContainer {
   width: 100%;
   margin-top: 150px;
+  margin-bottom: -280px;
 }
 
 .contacttitleContainer {
@@ -128,4 +129,10 @@
 
 .contactpageContainer footer {
   top: -300px;
+}
+
+.mainContainer input:focus,
+.mainContainer textarea:focus {
+  outline: none;
+  border: 2px solid var(--pink);
 }
