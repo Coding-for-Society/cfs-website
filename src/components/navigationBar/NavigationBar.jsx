@@ -24,7 +24,9 @@ export default function NavigationBar() {
           {navConfig.map((navLink) => (
             <li key={navLink}>
               <Link
-                className={currentPage === navLink.path ? "activeLink" : ""}
+                className={
+                  currentPage.startsWith(navLink.path) ? "activeLink" : ""
+                }
                 to={navLink.path}
               >
                 {navLink.name}

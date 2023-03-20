@@ -33,13 +33,19 @@ export default function Routes() {
         },
         {
           path: "/projects",
-          element: <h1>projects</h1>,
-          children: [],
+          element: <Outlet />,
+          children: [
+            { path: "", element: <h1>Projects</h1> },
+            { path: ":id", element: <h1>Dynamic Segment: Projects</h1> },
+          ],
         },
         {
           path: "/team",
-          element: <h1>team</h1>,
-          children: [],
+          element: <Outlet />,
+          children: [
+            { path: "", element: <h1>Team</h1> },
+            { path: ":id", element: <h1>Dynamic Segment: Team</h1> },
+          ],
         },
         {
           path: "/goals",

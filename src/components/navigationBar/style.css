@@ -45,6 +45,10 @@
   color: var(--green);
 }
 
+.navBarLinks .activeLink:hover {
+  color: var(--green);
+}
+
 .navBarLinks li {
   list-style: none;
   padding: 0 25px;
