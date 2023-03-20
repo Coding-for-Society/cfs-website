@@ -1,8 +1,17 @@
-import { Link } from "react-router-dom";
+import { useEffect, useState } from "react";
+import { Link, useLocation } from "react-router-dom";
 import NavBarBubble from "./bubbles/NavBarBubble";
 import "./style.css";
+import navConfig from "./config";
 
 export default function NavigationBar() {
+  const location = useLocation();
+  const [currentPage, setCurrentPage] = useState("/home");
+
+  useEffect(() => {
+    setCurrentPage(location.pathname);
+  }, [location]);
+
   return (
     <div className="navBar">
       <div className="navBarLogo">
@@ -12,21 +21,16 @@ export default function NavigationBar() {
       </div>
       <div className="navBarLinkContainer">
         <ul className="navBarLinks">
-          <li>
-            <Link to="/projects">Projects</Link>
-          </li>
-          <li>
-            <Link to="/team">Team</Link>
-          </li>
-          <li>
-            <Link to="/goals">Goals</Link>
-          </li>
-          <li>
-            <Link to="/contact">Contact</Link>
-          </li>
-          <li>
-            <Link to="/apply">Apply</Link>
-          </li>
+          {navConfig.map((navLink) => (
+            <li key={navLink}>
+              <Link
+                className={currentPage === navLink.path ? "activeLink" : ""}
+                to={navLink.path}
+              >
+                {navLink.name}
+              </Link>
+            </li>
+          ))}
         </ul>
         <NavBarBubble className="navBarBubble" />
       </div>
