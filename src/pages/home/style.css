@@ -16,7 +16,7 @@
 .sloganContainer {
   position: absolute;
   height: 900px;
-  top: 50px;
+  top: 75px;
 }
 
 .sloganBubble {
@@ -120,7 +120,7 @@
   width: 100%;
   z-index: -10;
   overflow-anchor: none;
-  max-height: 3700px;
+  max-height: 3750px;
   overflow: hidden;
 }
 

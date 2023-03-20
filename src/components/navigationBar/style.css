@@ -13,8 +13,13 @@
   margin-top: 0;
   color: var(--dark-blue);
   font-size: 32px;
-  padding-left: 15px;
-  padding-top: 50px;
+  padding-left: 80px;
+  padding-top: 45px;
+  transition: color 0.1s linear;
+}
+
+.navBar h1:hover {
+  color: var(--pink);
 }
 
 .navBar a {
@@ -45,4 +50,9 @@
   color: var(--beige);
   font-size: 22px;
   font-weight: 600;
+  transition: color 0.1s linear;
+}
+
+.navBarLinks a:hover {
+  color: var(--pink);
 }

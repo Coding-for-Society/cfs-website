@@ -4,6 +4,10 @@
   color: var(--dark-blue);
 }
 
+.applyContainer {
+  margin-top: 150px;
+}
+
 .applyContainer h2 {
   color: var(--beige);
 }
@@ -11,7 +15,7 @@
 .applytitleText,
 .tswebpageText,
 .projecteduText,
-.cfswebpageText  {
+.cfswebpageText {
   margin-left: 80px;
   margin-right: 50px;
 }
@@ -24,7 +28,7 @@
   position: relative;
 }
 
-.positionsText  {
+.positionsText {
   margin-top: 50px;
   margin-left: 80px;
 }
