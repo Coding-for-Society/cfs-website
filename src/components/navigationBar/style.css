@@ -1,0 +1,10 @@
+.navBar {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.navBarBubble {
+  position: absolute;
+  z-index: -1;
+}
