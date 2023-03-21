@@ -20,6 +20,10 @@ footer {
   color: var(--beige);
 }
 
+.footerColumn a:hover {
+  color: var(--green);
+}
+
 .logoColumn h2 {
   color: var(--beige);
   font-size: 36px;
