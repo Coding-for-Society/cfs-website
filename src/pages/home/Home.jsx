@@ -7,7 +7,7 @@ import ContactBubble from "./bubbles/ContactBubble";
 import SloganBubble from "./bubbles/SloganBubble";
 import TeamBubble from "./bubbles/TeamBubble";
 import ProjectSlider from "../../components/projectSlider/ProjectSlider";
-import { projectConfig, teamConfig } from "./config";
+import { projectConfig, teamConfig } from "../../config";
 import TeamSlider from "../../components/teamSlider/TeamSlider";
 
 function Home() {

@@ -24,7 +24,7 @@ export default function TeamSlider(props) {
         className="teamSlider"
       >
         <ul className="teamSliderEntryList">
-          {team.map((member, i, { length }) => (
+          {Object.values(team).map((member, i, { length }) => (
             <li
               key={member.id}
               className={i + 1 === length ? "lastTeamSliderItem" : ""}

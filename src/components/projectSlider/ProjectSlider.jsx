@@ -24,7 +24,7 @@ export default function ProjectSlider(props) {
         className="projectSlider"
       >
         <ul className="projectSliderEntryList">
-          {projects.map((project, i, { length }) => (
+          {Object.values(projects).map((project, i, { length }) => (
             <li
               key={project.id}
               className={i + 1 === length ? "lastSliderItem" : ""}
