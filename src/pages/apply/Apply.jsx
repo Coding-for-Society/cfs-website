@@ -1,4 +1,4 @@
-import { FAQTSWebsite, FAQProjectEdu, FAQCFSWebsite, FAQs } from "./config";
+import { FAQTSWebsite, FAQProjectEdu, FAQCFSWebsite, FAQs } from "../../config";
 import ApplyBubble1 from "./bubbles/ApplyBubble1";
 import ApplyBubble2 from "./bubbles/ApplyBubble2";
 import "./style.css";
