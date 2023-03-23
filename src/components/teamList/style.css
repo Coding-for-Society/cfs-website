@@ -1,0 +1,14 @@
+.teamList li {
+  list-style: none;
+}
+
+.teamList ul {
+  display: grid;
+  padding: 0;
+  grid-template-columns: repeat(5, auto);
+  row-gap: 20px;
+}
+
+.teamList {
+  margin-top: 80px;
+}
