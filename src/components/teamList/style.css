@@ -6,7 +6,7 @@
   display: grid;
   padding: 0;
   grid-template-columns: repeat(5, auto);
-  row-gap: 20px;
+  row-gap: 25px;
 }
 
 .teamList {

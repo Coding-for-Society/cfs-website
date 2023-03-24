@@ -5,6 +5,7 @@
   justify-content: flex-start;
   align-items: center;
   flex-direction: column;
+  position: relative;
 }
 
 .teamListEntryImageContainer {
@@ -24,8 +25,29 @@
 .teamListEntry h3 {
   font-size: 24px;
   margin-bottom: 0;
+  transition: color 0.2s linear;
 }
 
 .teamListEntry p {
   margin-top: 10px;
+  transition: color 0.2s linear;
+}
+
+.teamTextActive {
+  color: var(--beige);
+}
+
+.teamTextInactive {
+  color: var(--dark-blue);
+}
+
+.teamListEntryBubbleContainer {
+  position: absolute;
+  z-index: -10;
+  top: -80px;
+  height: 430px;
+}
+
+.teamListEntryBubble {
+  height: 100%;
 }
