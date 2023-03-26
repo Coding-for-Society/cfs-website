@@ -1,0 +1,72 @@
+.goalsContainer {
+  margin-top: 150px;
+}
+
+.goalsContainer h1,
+.goalsContainer h2,
+.goalsContainer p {
+  margin-left: 80px;
+  margin-right: 50px;
+}
+
+.blockquote {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 100px;
+}
+
+.blockquoteText {
+  text-align: center;
+  font-style: italic;
+  font-size: 36px;
+  width: 1000px;
+}
+
+.blockquoteAuthor {
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 0.25em;
+}
+
+.blockquoteAuthor2 {
+  text-align: center;
+  font-size: 18px;
+  margin-top: 0;
+  color: var(--grey);
+}
+
+.liquidSwipe {
+  margin-bottom: 50px;
+}
+
+.goalsText h3,
+.goalsText p {
+  text-align: center;
+}
+
+.goalsText p {
+  font-size: 32px;
+}
+
+.goalsText {
+  text-align: center;
+  padding-top: 50px;
+  padding-left: 20vw;
+  padding-right: 20vw;
+  padding-bottom: 500px;
+}
+
+.goalsText1 {
+  background: blue;
+  color: var(--beige);
+}
+
+.goalsText2 {
+  background: var(--green);
+}
+
+.goalsText3 {
+  background: var(--pink);
+}

@@ -7,6 +7,7 @@ import {
 import Home from "./pages/home/Home";
 import Apply from "./pages/apply/Apply";
 import Contact from "./pages/contact/Contact";
+import Goals from "./pages/goals/Goals";
 import NavigationBar from "./components/navigationBar/NavigationBar";
 import Footer from "./components/footer/Footer";
 
@@ -49,7 +50,7 @@ export default function Routes() {
         },
         {
           path: "/goals",
-          element: <h1>goals</h1>,
+          element: <Goals />,
           children: [],
         },
         {
