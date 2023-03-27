@@ -97,7 +97,7 @@
 .submitButton {
   position: absolute;
   top: 961px;
-  right: 8vw;
+  left: 500px;
   border: none;
   border-radius: 30px;
   background-color: var(--beige);
@@ -110,6 +110,11 @@
   font-weight: 700;
   margin: 4px 2px;
   cursor: pointer;
+  z-index: 1;
+}
+
+.submitButton:hover {
+  background-color: var(--green);
 }
 
 .contactpageContainer footer {

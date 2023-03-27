@@ -83,6 +83,10 @@ footer a {
   cursor: pointer;
 }
 
+.applyLink:hover {
+  background: var(--green);
+}
+
 .contactLink {
   background-color: var(--dark-blue);
   color: var(--beige);
@@ -96,6 +100,11 @@ footer a {
   font-weight: 700;
   margin-top: 5px;
   cursor: pointer;
+}
+
+.contactLink:hover {
+  border: var(--green) 3px solid;
+  color: var(--green);
 }
 
 .footerBubble {
