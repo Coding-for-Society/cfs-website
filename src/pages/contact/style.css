@@ -23,6 +23,7 @@
   width: 100vw;
 }
 
+/* the distance between the input and the right edge of the screen should be 8vw */
 .mainContainer input,
 .mainContainer textarea {
   font-size: 24px;
@@ -31,12 +32,12 @@
   border: none;
   padding-left: 18px;
   background-color: var(--beige);
-  left: 500px;
-  right: 8vw;
+  left: 25vw;
 }
 
 .mainContainer input {
   height: 48px;
+  width: 65vw;
 }
 
 .mainContainer p {
@@ -91,13 +92,14 @@
   top: 475px;
   height: 400px;
   padding: 18px;
+  width: 64vw;
   resize: none;
 }
 
 .submitButton {
   position: absolute;
   top: 961px;
-  left: 500px;
+  left: calc(89vw - 110px);
   border: none;
   border-radius: 30px;
   background-color: var(--beige);
