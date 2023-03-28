@@ -74,7 +74,8 @@
 
 .teamBubble {
   position: absolute;
-  top: 20px;
+  height: 1200px;
+  top: -50px;
   z-index: -4;
 }
 

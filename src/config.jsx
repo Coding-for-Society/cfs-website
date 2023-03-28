@@ -28,7 +28,7 @@ export const teamConfig = {
   jonasitt: {
     id: "jonasitt",
     name: "Jonas Itt",
-    role: "Founder",
+    role: "Founder & Project Lead",
     image: jonasittImg,
     desc: loremIpsum25Words,
     own_text: loremIpsum150Words,
@@ -36,7 +36,7 @@ export const teamConfig = {
   alexanderhuebner: {
     id: "alexanderhuebner",
     name: "Alexander Hübner",
-    role: "Founder",
+    role: "Founder & Project Lead",
     image: alexanderhuebnerImg,
     desc: loremIpsum25Words,
     own_text: loremIpsum150Words,
@@ -68,7 +68,7 @@ export const teamConfig = {
   daniellindner: {
     id: "daniellindner",
     name: "Daniel Lindner",
-    role: "Projekt: Wissen",
+    role: "Educator",
     image: daniellindnerImg,
     desc: loremIpsum25Words,
     own_text: loremIpsum150Words,
@@ -84,7 +84,7 @@ export const teamConfig = {
   harryzheng: {
     id: "harryzheng",
     name: "Harry Zheng",
-    role: "Projekt: Wissen",
+    role: "Frontend Developer & Educator",
     image: harryzhengImg,
     desc: loremIpsum25Words,
     own_text: loremIpsum150Words,
@@ -124,7 +124,7 @@ export const teamConfig = {
   nhatnguyen: {
     id: "nhatnguyen",
     name: "Nhat Nguyen",
-    role: "Design",
+    role: "Front End Developer & Deisgner",
     image: nhatnguyenImg,
     desc: loremIpsum25Words,
     own_text: loremIpsum150Words,
