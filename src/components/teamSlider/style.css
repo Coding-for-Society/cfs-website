@@ -1,7 +1,7 @@
 .teamSliderEntryList {
   display: flex;
   flex-direction: row;
-  padding: 20px 80px;
+  padding: 20px 60px;
 }
 
 .teamSlider {
