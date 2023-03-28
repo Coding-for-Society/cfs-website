@@ -1,7 +1,8 @@
 .teamSliderEntry {
-  width: 100%;
+  width: 320px;
   height: 100%;
   position: relative;
+  text-align: center;
 }
 
 .teamSliderEntryName {
@@ -18,8 +19,10 @@
 .teamSliderImgContainer {
   height: 350px;
   min-width: 250px;
-  max-width: 350px;
+  max-width: 320px;
   overflow: hidden;
+  display: flex;
+  justify-content: center;
 }
 
 .teamSliderEntryImg {
@@ -54,6 +57,6 @@
 .memberBubbleContainer {
   position: absolute;
   top: -30px;
-  left: -50px;
+  left: 0px;
   z-index: -1;
 }

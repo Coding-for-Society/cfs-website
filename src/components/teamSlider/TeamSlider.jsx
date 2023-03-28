@@ -6,15 +6,17 @@ import TeamSliderEntry from "./teamSliderEntry/teamSliderEntry";
 export default function TeamSlider(props) {
   const { team } = props;
   const [sliderWidth, setSliderWidth] = useState(0);
-  const slider = useRef();
+  const teamSlider = useRef();
 
   useEffect(() => {
-    setSliderWidth(slider.current.scrollWidth - slider.current.offsetWidth);
+    setSliderWidth(
+      teamSlider.current.scrollWidth - teamSlider.current.offsetWidth,
+    );
   }, []);
 
   return (
     <motion.div
-      ref={slider}
+      ref={teamSlider}
       className="outerTeamSlider"
       whileTap={{ cursor: "grabbing" }}
     >

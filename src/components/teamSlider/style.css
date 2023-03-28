@@ -18,6 +18,7 @@
   width: 100vw;
   cursor: grab;
   overflow: hidden;
+  height: 700px;
 }
 
 .lastTeamSliderItem {
