@@ -122,7 +122,7 @@ export const teamConfig = {
   nhatnguyen: {
     id: "nhatnguyen",
     name: "Nhat Nguyen",
-    role: "Front End Developer & Deisgner",
+    role: "Front End Developer & Designer",
     image: nhatnguyenImg,
     desc: loremIpsum25Words,
     own_text: loremIpsum150Words,

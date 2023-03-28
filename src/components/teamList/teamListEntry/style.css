@@ -14,12 +14,15 @@
   min-height: 200px;
   border-radius: 50%;
   overflow: hidden;
+  display: flex;
+  justify-content: center;
 }
 
 .teamListEntry img {
-  min-height: 100%;
-  max-width: 100%;
   pointer-events: none;
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
 }
 
 .teamListEntry h3 {

@@ -7,7 +7,7 @@ export default function TeamList(props) {
   return (
     <div className="teamList">
       <ul>
-        {members.map((member) => (
+        {Object.values(members).map((member) => (
           <li key={member}>
             <TeamListEntry member={member} />
           </li>

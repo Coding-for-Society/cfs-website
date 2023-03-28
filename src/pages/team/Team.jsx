@@ -1,5 +1,5 @@
 import TeamList from "../../components/teamList/TeamList";
-import { teamConfig } from "../home/config";
+import { teamConfig } from "../../config";
 import "./style.css";
 
 export default function Team() {
