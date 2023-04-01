@@ -1,4 +1,4 @@
-import { useParams } from "react-router-dom";
+import { useParams, Link } from "react-router-dom";
 import TeamDetailBubble from "./bubbles/TeamDetailBubble";
 import { teamConfig } from "../../../config";
 import "./style.css";
@@ -11,7 +11,6 @@ export default function TeamDetail() {
   return (
     <div className="teamDetailContainer">
       <h1 className="teamDetailHeading">Our Team</h1>
-
       <div className="teamDetailContentContainer">
         <div className="teamDetailContent">
           <h2>{member.name}</h2>
@@ -24,6 +23,9 @@ export default function TeamDetail() {
               <p>{member.own_text}</p>
             </div>
           </div>
+          <Link className="teamDetailBack" to="/team">
+            x
+          </Link>
         </div>
         <TeamDetailBubble
           className="teamDetailBubble"
