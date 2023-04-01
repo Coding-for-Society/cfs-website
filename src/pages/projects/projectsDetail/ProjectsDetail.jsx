@@ -2,6 +2,7 @@ import { useParams, Link } from "react-router-dom";
 import ProjectsDetailBubble from "./bubbles/ProjectsDetailBubble";
 import { projectConfig } from "../../../config";
 import "./style.css";
+import ProjectsDetailTeam from "../../../components/projectsDetailTeam/ProjectsDetailTeam";
 
 export default function ProjectsDetail() {
   const { id } = useParams();
@@ -19,7 +20,11 @@ export default function ProjectsDetail() {
               <img src={project.image} alt={project.name} />
             </div>
             <div className="projectDetailGridText">
-              <p>{project.desc}</p>
+              <div className="projectDetailDescriptionContainer">
+                <p>{project.desc}</p>
+              </div>
+              <h3>Project Team</h3>
+              <ProjectsDetailTeam team={project.team} />
             </div>
           </div>
           <Link className="projectDetailBack" to="/projects">

@@ -160,7 +160,7 @@ export const projectConfig = [
     start: new Date(2022, 10),
     end: null,
     active: true,
-    desc: "Hallo Test Description Test Hallo test",
+    desc: loremIpsum150Words + loremIpsum150Words,
     team: [
       teamConfig.daniellindner,
       teamConfig.harryzheng,

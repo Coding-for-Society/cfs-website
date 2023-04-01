@@ -2,7 +2,7 @@
   width: 100vw;
   margin-top: 150px;
   position: relative;
-  height: 1200px;
+  height: 1380px;
   overflow: hidden;
   margin-bottom: -300px;
 }
@@ -45,7 +45,7 @@
   display: flex;
 }
 
-.projectDetailGridText h3 {
+.projectDetailGridText p {
   padding-top: 0;
   margin-top: 0;
 }
@@ -59,7 +59,7 @@
   padding-left: 80px;
   margin-top: 0;
   margin-bottom: 0;
-  width: 400px;
+  width: 450px;
 }
 
 .projectDetailBack {
@@ -71,4 +71,11 @@
   font-size: 32px;
   font-weight: 700;
   z-index: 10;
+}
+
+.projectDetailDescriptionContainer {
+  height: 480px;
+
+  overflow-y : auto; 
+  overflow-x : hidden;
 }
