@@ -1,0 +1,164 @@
+#Software {
+  color: var(--green);
+}
+
+.homeContainer {
+  position: relative;
+  height: 3800px;
+  margin-bottom: -250px;
+}
+
+.homeContainer h1,
+.homeContainer h2,
+.homeContainer p {
+  color: var(--beige);
+}
+
+.sloganContainer {
+  position: absolute;
+  height: 900px;
+  top: 75px;
+}
+
+.sloganBubble {
+  position: absolute;
+  top: 0;
+  z-index: -1;
+}
+.sloganBubbleText {
+  padding-top: 280px;
+  padding-left: 80px;
+}
+
+.motivationContainer {
+  position: absolute;
+  top: 250px;
+  right: 0px;
+  width: 600px;
+}
+
+.motivationBubble {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: -1;
+}
+
+.motivationBubbleText {
+  padding-top: 330px;
+  padding-right: 50px;
+  padding-left: 20px;
+}
+
+.projectsContainer {
+  position: absolute;
+  top: 970px;
+}
+
+.projectsBubble {
+  position: absolute;
+  top: 0;
+  z-index: -1;
+}
+
+.projectsBubbleText {
+  padding-top: 70px;
+  padding-left: 80px;
+  width: 800px;
+}
+
+.teamContainer {
+  position: absolute;
+  top: 1900px;
+}
+
+.teamBubble {
+  position: absolute;
+  height: 1200px;
+  top: -50px;
+  z-index: -4;
+}
+
+.teamBubbleText {
+  padding-top: 70px;
+  padding-left: 80px;
+  width: 600px;
+}
+
+.contactContainer {
+  position: absolute;
+  top: 2950px;
+  width: 100%;
+}
+
+.contactBubble {
+  position: absolute;
+  top: 0;
+  z-index: -1;
+  left: 50%;
+  margin-left: -400px;
+}
+
+.contactBubbleText {
+  width: 400px;
+  position: absolute;
+  top: 80px;
+  left: 50%;
+  margin-left: -200px;
+  text-align: center;
+}
+
+#backgroundWave {
+  position: relative;
+  width: 100%;
+  transform: rotate(180deg);
+  left: 0;
+  margin-top: -10px;
+  padding-top: 0;
+  color: var(--beige);
+}
+
+.waveContainer {
+  position: absolute;
+  width: 100%;
+  z-index: -10;
+  overflow-anchor: none;
+  max-height: 3780px;
+  overflow: hidden;
+}
+
+.waveStatic {
+  background: var(--beige);
+  width: 100%;
+  transition: all 0.3s;
+}
+
+.homeContainerBackground {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -20;
+  background-color: white;
+}
+
+.contactBubbleText a {
+  text-decoration: none;
+  color: var(--beige);
+  font-size: 24px;
+  font-weight: 800;
+  border: 2px solid var(--green);
+  padding: 10px 20px;
+  border-radius: 50px;
+}
+
+.contactBubbleText a:hover {
+  border: 2px solid var(--pink);
+  color: var(--dark-blue);
+  background-color: var(--green);
+}
+
+.contactBubbleText p {
+  padding-bottom: 20px;
+}

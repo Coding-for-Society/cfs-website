@@ -1,0 +1,26 @@
+.teamSliderEntryList {
+  display: flex;
+  flex-direction: row;
+  padding: 20px 60px;
+}
+
+.teamSlider {
+  display: flex;
+  width: 100%;
+}
+.teamSliderEntryList li {
+  list-style: none;
+  padding-left: 0px;
+  padding-right: 80px;
+}
+
+.outerTeamSlider {
+  width: 100vw;
+  cursor: grab;
+  overflow: hidden;
+  height: 700px;
+}
+
+.lastTeamSliderItem {
+  padding-right: 0 !important;
+}

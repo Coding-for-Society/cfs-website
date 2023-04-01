@@ -1,0 +1,62 @@
+.teamSliderEntry {
+  width: 320px;
+  height: 100%;
+  position: relative;
+  text-align: center;
+}
+
+.teamSliderEntryName {
+  font-size: 24px;
+  color: var(--beige);
+  margin-bottom: 0;
+  margin-top: 20px;
+}
+
+.teamSliderEntryRole {
+  margin-top: 0;
+}
+
+.teamSliderImgContainer {
+  height: 350px;
+  min-width: 250px;
+  max-width: 320px;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+}
+
+.teamSliderEntryImg {
+  height: 100%;
+  pointer-events: none;
+  -webkit-filter: grayscale(100%); /* Ch 23+, Saf 6.0+, BB 10.0+ */
+  filter: grayscale(100%); /* FF 35+ */
+  -webkit-transition: 0.5s -webkit-filter linear;
+  -moz-transition: 0.5s -moz-filter linear;
+  -moz-transition: 0.5s filter linear;
+  -ms-transition: 0.5s -ms-filter linear;
+  -o-transition: 0.5s -o-filter linear;
+  transition: 0.5s filter linear, 1s -webkit-filter linear;
+}
+
+.teamSliderEntry:hover .teamSliderEntryImg {
+  -webkit-filter: grayscale(0%); /* Ch 23+, Saf 6.0+, BB 10.0+ */
+  filter: grayscale(0%); /* FF 35+ */
+}
+
+.readMoreTeam {
+  text-decoration: none;
+  color: var(--beige);
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.readMoreTeam:hover {
+  color: var(--green);
+}
+
+.memberBubbleContainer {
+  position: absolute;
+  top: -30px;
+  left: 0px;
+  z-index: -1;
+}
