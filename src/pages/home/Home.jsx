@@ -15,7 +15,7 @@ function Home() {
   const [activeCount, setActiveCount] = useState(1);
 
   const activateBubbles = () => {
-    if (scroll <= 100) {
+    if (scroll <= 120) {
       setActiveCount(1);
     } else if (scroll <= 650) {
       setActiveCount(2);

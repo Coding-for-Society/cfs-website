@@ -17,8 +17,6 @@ import ragnarfischerImg from "./img/team/ragnarfischer.jpg";
 // project images
 import ProjectImage from "./img/projects/SampleProject.jpg";
 
-const loremIpsum150Words =
-  "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed volutpat libero massa, quis blandit erat fringilla quis. Aliquam erat volutpat. Nunc malesuada neque quis lacus tristique, vel varius quam lobortis. Donec aliquam velit ligula, ac efficitur ex lobortis sed. Phasellus nisl orci, interdum in scelerisque in, tempus dapibus risus. Sed a efficitur est. Morbi mauris nunc, blandit a semper eu, malesuada non quam. Vestibulum dapibus mi eros, non rutrum risus elementum nec. Fusce gravida vehicula sem, vel gravida nulla volutpat quis.";
 const loremIpsum25Words =
   "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam purus lectus, aliquam vitae sem id, faucibus dapibus felis. Class aptent taciti sociosqu ad litora torquent.";
 
@@ -29,7 +27,8 @@ export const teamConfig = {
     role: "Founder & Project Lead",
     image: jonasittImg,
     desc: loremIpsum25Words,
-    own_text: loremIpsum150Words,
+    own_text:
+      "Coding for Society, to me, is the perfect way to work on socially valuable projects. It is great to always improve personal skills and being in a diverse, motivated team of like-minded people.",
   },
   alexanderhuebner: {
     id: "alexanderhuebner",
@@ -37,7 +36,7 @@ export const teamConfig = {
     role: "Founder & Project Lead",
     image: alexanderhuebnerImg,
     desc: loremIpsum25Words,
-    own_text: loremIpsum150Words,
+    own_text: "",
   },
   adrianhoelzlwimmer: {
     id: "adrianhoelzlwimmer",
@@ -45,7 +44,7 @@ export const teamConfig = {
     role: "Frontend Developer",
     image: adrianhoelzlwimmerImg,
     desc: loremIpsum25Words,
-    own_text: loremIpsum150Words,
+    own_text: "",
   },
   carlheimann: {
     id: "carlheimann",
@@ -53,7 +52,7 @@ export const teamConfig = {
     role: "Frontend Developer",
     image: carlheimannImg,
     desc: loremIpsum25Words,
-    own_text: loremIpsum150Words,
+    own_text: "",
   },
   cevataykansevinc: {
     id: "cevataykansevinc",
@@ -61,7 +60,7 @@ export const teamConfig = {
     role: "Full Stack Developer",
     image: cevataykansevincImg,
     desc: loremIpsum25Words,
-    own_text: loremIpsum150Words,
+    own_text: "",
   },
   daniellindner: {
     id: "daniellindner",
@@ -69,7 +68,7 @@ export const teamConfig = {
     role: "Educator",
     image: daniellindnerImg,
     desc: loremIpsum25Words,
-    own_text: loremIpsum150Words,
+    own_text: "",
   },
   estellekulow: {
     id: "estellekulow",
@@ -77,7 +76,7 @@ export const teamConfig = {
     role: "Frontend Developer",
     image: estellekulowImg,
     desc: loremIpsum25Words,
-    own_text: loremIpsum150Words,
+    own_text: "",
   },
   harryzheng: {
     id: "harryzheng",
@@ -85,7 +84,7 @@ export const teamConfig = {
     role: "Frontend Developer & Educator",
     image: harryzhengImg,
     desc: loremIpsum25Words,
-    own_text: loremIpsum150Words,
+    own_text: "",
   },
   jakobbreternitz: {
     id: "jakobbreternitz",
@@ -93,7 +92,7 @@ export const teamConfig = {
     role: "Front End Developer",
     image: jakobbreternitzImg,
     desc: loremIpsum25Words,
-    own_text: loremIpsum150Words,
+    own_text: "",
   },
   jakobguenther: {
     id: "jakobguenther",
@@ -101,7 +100,7 @@ export const teamConfig = {
     role: "Back End Developer",
     image: jakobguentherImg,
     desc: loremIpsum25Words,
-    own_text: loremIpsum150Words,
+    own_text: "",
   },
   kaieberl: {
     id: "kaieberl",
@@ -109,7 +108,7 @@ export const teamConfig = {
     role: "Front End Developer",
     image: kaieberlImg,
     desc: loremIpsum25Words,
-    own_text: loremIpsum150Words,
+    own_text: "",
   },
   moritzfriedemann: {
     id: "moritzfriedemann",
@@ -117,7 +116,7 @@ export const teamConfig = {
     role: "Front End Developer",
     image: moritzfriedemannImg,
     desc: loremIpsum25Words,
-    own_text: loremIpsum150Words,
+    own_text: "",
   },
   nhatnguyen: {
     id: "nhatnguyen",
@@ -125,7 +124,7 @@ export const teamConfig = {
     role: "Front End Developer & Designer",
     image: nhatnguyenImg,
     desc: loremIpsum25Words,
-    own_text: loremIpsum150Words,
+    own_text: "",
   },
   ragnarfischer: {
     id: "ragnarfischer",
@@ -133,7 +132,7 @@ export const teamConfig = {
     role: "Back End Developer",
     image: ragnarfischerImg,
     desc: loremIpsum25Words,
-    own_text: loremIpsum150Words,
+    own_text: "",
   },
 };
 
@@ -145,7 +144,7 @@ export const projectConfig = [
     start: new Date(2022, 9),
     end: null,
     active: false,
-    desc: "Hallo Test Description Test Test Test Hallo",
+    desc: "Currently we are reworking the internet presence of the social student club Talente Spenden.",
     team: [
       teamConfig.alexanderhuebner,
       teamConfig.jakobbreternitz,
@@ -160,7 +159,7 @@ export const projectConfig = [
     start: new Date(2022, 10),
     end: null,
     active: true,
-    desc: loremIpsum150Words + loremIpsum150Words,
+    desc: "Project Education helps school students to find their way into computer science.",
     team: [
       teamConfig.daniellindner,
       teamConfig.harryzheng,
@@ -175,7 +174,7 @@ export const projectConfig = [
     start: new Date(2022, 10),
     end: null,
     active: true,
-    desc: "Our own website",
+    desc: "This project is rather personal, our own, somewhat special, website.",
     team: [
       teamConfig.jonasitt,
       teamConfig.kaieberl,
@@ -193,7 +192,7 @@ export const projectConfig = [
     start: new Date(2022, 10, 18),
     end: new Date(2022, 10, 20),
     active: false,
-    desc: "Together we participated in the HackaTUM 2022. We are proud to score the second place in one of the sponsor challenge.",
+    desc: "Together we participated in the HackaTUM 2022. We scored 2nd in one the challenges.",
     team: [
       teamConfig.alexanderhuebner,
       teamConfig.ragnarfischer,
