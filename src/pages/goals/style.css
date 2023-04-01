@@ -4,9 +4,10 @@
 
 .goalsContainer h1,
 .goalsContainer h2,
+.goalsContainer h3,
 .goalsContainer p {
-  margin-left: 80px;
-  margin-right: 50px;
+  margin-left: 10vw;
+  margin-right: 10vw
 }
 
 .blockquote {
@@ -37,36 +38,35 @@
   color: var(--grey);
 }
 
-.liquidSwipe {
-  margin-bottom: 50px;
+.goalsTextContainer {
+  position: relative;
 }
 
-.goalsText h3,
-.goalsText p {
-  text-align: center;
+.goalsBubble {
+  position: absolute;
+  top: 0;
+  width: 100vw;
+  z-index: -1;
+}
+
+.goalsText {
+  position: relative;
+  top: 20vh;
 }
 
 .goalsText p {
   font-size: 32px;
 }
 
-.goalsText {
-  text-align: center;
-  padding-top: 50px;
-  padding-left: 20vw;
-  padding-right: 20vw;
-  padding-bottom: 500px;
-}
-
-.goalsText1 {
-  background: blue;
+.goalsText p,
+.goalsText h3 {
   color: var(--beige);
 }
 
-.goalsText2 {
-  background: var(--green);
-}
-
-.goalsText3 {
-  background: var(--pink);
+.spacer {
+  height: 800px;
+  width: 100vw;
+  background-color: var(--dark-blue);
+  z-index: -1;
+  margin-bottom: -250px;
 }
