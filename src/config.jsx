@@ -145,7 +145,7 @@ export const projectConfig = [
     start: new Date(2022, 9),
     end: null,
     active: false,
-    desc: "",
+    desc: "Hallo Test Description Test Test Test Hallo",
     team: [
       teamConfig.alexanderhuebner,
       teamConfig.jakobbreternitz,
@@ -160,7 +160,7 @@ export const projectConfig = [
     start: new Date(2022, 10),
     end: null,
     active: true,
-    desc: "",
+    desc: "Hallo Test Description Test Hallo test",
     team: [
       teamConfig.daniellindner,
       teamConfig.harryzheng,

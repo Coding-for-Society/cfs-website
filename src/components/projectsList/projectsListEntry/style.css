@@ -1,7 +1,6 @@
 .projectsListEntry {
   height: 400px;
   width: 320px;
-  overflow: hidden;
   background-color: var(--beige);
   position: relative;
   border: 2px solid var(--dark-blue);
@@ -39,7 +38,7 @@
   display: none;
 }
 
-.imageOverlay {
+.projectsListImageOverlay {
   position: absolute;
   width: 100%;
   height: 70%;
@@ -50,6 +49,19 @@
   align-items: center;
 }
 
-.projectsListEntry:hover .imageOverlay {
-  background-color: rgba(1, 0, 29, 0.536);
+.projectsListEntry:hover .projectsListImageOverlay {
+  background-color: rgba(1, 0, 29, 0.7);
+}
+
+.projectsListEntryLink {
+  display: block;
+  text-decoration: none;
+  color: var(--dark-blue);
+  height: 400px;
+  width: 320px;
+}
+
+.projectsListImageOverlay p {
+  width: 80%;
+  color: var(--beige);
 }
