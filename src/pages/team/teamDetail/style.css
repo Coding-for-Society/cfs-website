@@ -1,0 +1,74 @@
+.teamDetailContainer {
+  width: 100vw;
+  margin-top: 150px;
+  position: relative;
+  height: 1200px;
+  overflow: hidden;
+  margin-bottom: -300px;
+}
+
+.teamDetailContentContainer {
+  padding-top: 0px;
+  position: relative;
+  margin-top: -30px;
+}
+
+.teamDetailBubble {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: -10;
+}
+
+.teamDetailContent {
+  padding-top: 40px;
+  color: var(--beige);
+  margin-left: 80px;
+}
+
+.teamDetailImageContainer {
+  width: 350px;
+  height: 480px;
+  min-width: 350px;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+}
+
+.teamDetailImageContainer img {
+  object-fit: fill;
+  height: 100%;
+}
+
+.teamDetailGrid {
+  display: flex;
+}
+
+.teamDetailGridText h3 {
+  padding-top: 0;
+  margin-top: 0;
+}
+
+.teamDetailGridText {
+  padding-left: 100px;
+  width: 40%;
+}
+
+.teamDetailHeading {
+  padding-left: 80px;
+  margin-top: 0;
+  margin-bottom: 0;
+  width: 400px;
+}
+
+.teamDetailBack {
+  position: absolute;
+  right: 80px;
+  top: 120px;
+  text-decoration: none;
+  color: var(--beige);
+  font-size: 32px;
+  font-weight: 700;
+  z-index: 10;
+}

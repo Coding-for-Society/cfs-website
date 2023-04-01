@@ -18,7 +18,7 @@ import ragnarfischerImg from "./img/team/ragnarfischer.jpg";
 import ProjectImage from "./img/projects/SampleProject.jpg";
 
 const loremIpsum150Words =
-  "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed volutpat libero massa, quis blandit erat fringilla quis. Aliquam erat volutpat. Nunc malesuada neque quis lacus tristique, vel varius quam lobortis. Donec aliquam velit ligula, ac efficitur ex lobortis sed. Phasellus nisl orci, interdum in scelerisque in, tempus dapibus risus. Sed a efficitur est. Morbi mauris nunc, blandit a semper eu, malesuada non quam. Vestibulum dapibus mi eros, non rutrum risus elementum nec. Fusce gravida vehicula sem, vel gravida nulla volutpat quis. Morbi sit amet pharetra dolor, at commodo lectus. Suspendisse ut lacus molestie, interdum ligula et, ultrices purus. Ut malesuada porta augue eu convallis. Cras sed mi at sem ornare tincidunt. Sed pharetra lectus vitae dapibus fringilla. Sed in nulla id magna aliquet porta in vitae diam. Aliquam elementum enim justo, et pellentesque turpis sollicitudin a. Aenean blandit eu nunc id scelerisque. Nulla facilisi. Nullam suscipit cursus turpis eget finibus.";
+  "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed volutpat libero massa, quis blandit erat fringilla quis. Aliquam erat volutpat. Nunc malesuada neque quis lacus tristique, vel varius quam lobortis. Donec aliquam velit ligula, ac efficitur ex lobortis sed. Phasellus nisl orci, interdum in scelerisque in, tempus dapibus risus. Sed a efficitur est. Morbi mauris nunc, blandit a semper eu, malesuada non quam. Vestibulum dapibus mi eros, non rutrum risus elementum nec. Fusce gravida vehicula sem, vel gravida nulla volutpat quis.";
 const loremIpsum25Words =
   "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam purus lectus, aliquam vitae sem id, faucibus dapibus felis. Class aptent taciti sociosqu ad litora torquent.";
 
@@ -122,7 +122,7 @@ export const teamConfig = {
   nhatnguyen: {
     id: "nhatnguyen",
     name: "Nhat Nguyen",
-    role: "Front End Developer & Deisgner",
+    role: "Front End Developer & Designer",
     image: nhatnguyenImg,
     desc: loremIpsum25Words,
     own_text: loremIpsum150Words,
