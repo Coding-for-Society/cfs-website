@@ -10,6 +10,7 @@ import Team from "./pages/team/Team";
 import Contact from "./pages/contact/Contact";
 import NavigationBar from "./components/navigationBar/NavigationBar";
 import Footer from "./components/footer/Footer";
+import TeamDetail from "./pages/team/teamDetail/TeamDetail";
 
 export default function Routes() {
   const routes = createBrowserRouter([
@@ -45,7 +46,7 @@ export default function Routes() {
           element: <Outlet />,
           children: [
             { path: "", element: <Team /> },
-            { path: ":id", element: <h1>Dynamic Segment: Team</h1> },
+            { path: ":id", element: <TeamDetail /> },
           ],
         },
         {

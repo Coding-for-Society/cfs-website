@@ -54,3 +54,7 @@
 .teamListEntryBubble {
   height: 100%;
 }
+
+.teamListLink {
+  text-decoration: none;
+}
