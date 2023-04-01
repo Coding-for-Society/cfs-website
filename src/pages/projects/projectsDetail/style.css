@@ -76,6 +76,12 @@
 .projectDetailDescriptionContainer {
   height: 480px;
 
-  overflow-y : auto; 
-  overflow-x : hidden;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+.projectDetailContentContainer h2,
+.projectDetailContentContainer p,
+.projectDetailContentContainer h3 {
+  color: var(--beige);
 }
