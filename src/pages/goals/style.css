@@ -1,0 +1,75 @@
+.goalsContainer {
+  margin-top: 150px;
+}
+
+.goalsContainer h2,
+.goalsContainer h3,
+.goalsContainer p {
+  margin-left: 10vw;
+  margin-right: 10vw;
+}
+
+.goalsContainer h1 {
+  margin-left: 80px;
+}
+
+.blockquote {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 100px;
+}
+
+.blockquoteText {
+  text-align: center;
+  font-style: italic;
+  font-size: 36px;
+  width: 1000px;
+}
+
+.blockquoteAuthor {
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 0.25em;
+}
+
+.blockquoteAuthor2 {
+  text-align: center;
+  font-size: 18px;
+  margin-top: 0;
+  color: var(--grey);
+}
+
+.goalsTextContainer {
+  position: relative;
+}
+
+.goalsBubble {
+  position: absolute;
+  top: 0;
+  width: 100vw;
+  z-index: -1;
+}
+
+.goalsText {
+  position: relative;
+  top: 20vh;
+}
+
+.goalsText p {
+  font-size: 32px;
+}
+
+.goalsText p,
+.goalsText h3 {
+  color: var(--beige);
+}
+
+.spacer {
+  height: 800px;
+  width: 100vw;
+  background-color: var(--dark-blue);
+  z-index: -1;
+  margin-bottom: -250px;
+}
