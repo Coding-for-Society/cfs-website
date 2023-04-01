@@ -79,3 +79,9 @@
   overflow-y: auto;
   overflow-x: hidden;
 }
+
+.projectDetailContentContainer h2,
+.projectDetailContentContainer p,
+.projectDetailContentContainer h3 {
+  color: var(--beige);
+}

@@ -18,6 +18,7 @@ a,
 p,
 span {
   font-family: "Poppins", sans-serif;
+  color: var(--dark-blue);
 }
 
 h1 {

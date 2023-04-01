@@ -23,6 +23,27 @@
   width: 100vw;
 }
 
+/* the distance between the input and the right edge of the screen should be 8vw */
+.mainContainer input,
+.mainContainer textarea {
+  font-size: 24px;
+  font-family: "Poppins", sans-serif;
+  border-radius: 26px;
+  border: none;
+  padding-left: 18px;
+  background-color: var(--beige);
+  left: 25vw;
+}
+
+.mainContainer input {
+  height: 48px;
+  width: 65vw;
+}
+
+.mainContainer p {
+  padding-left: 6vw;
+}
+
 .contactpageBubble {
   position: relative;
   height: 1200px;
@@ -34,90 +55,56 @@
 .nameText {
   position: absolute;
   top: 150px;
-  padding-left: 80px;
 }
 
 .nameInput {
   position: absolute;
-  top: 170px;
-  left: 400px;
-  width: 60vw;
-  height: 36px;
-  border-radius: 30px;
-  border: none;
-  font-size: 24px;
-  font-family: "Poppins", sans-serif;
-  padding-left: 18px;
+  top: 165px;
 }
 
 .emailText {
   position: absolute;
-  top: 240px;
-  padding-left: 80px;
+  top: 250px;
 }
 
 .emailInput {
   position: absolute;
-  top: 260px;
-  left: 400px;
-  width: 60vw;
-  height: 36px;
-  border-radius: 30px;
-  border: none;
-  font-size: 24px;
-  font-family: "Poppins", sans-serif;
-  padding-left: 18px;
+  top: 265px;
 }
 
 .subjectText {
   position: absolute;
-  top: 330px;
-  padding-left: 80px;
+  top: 350px;
 }
 
 .subjectInput {
   position: absolute;
-  top: 350px;
-  left: 400px;
-  width: 60vw;
-  height: 36px;
-  border-radius: 30px;
-  border: none;
-  font-size: 24px;
-  font-family: "Poppins", sans-serif;
-  padding-left: 18px;
+  top: 365px;
 }
 
 .messageText {
   position: absolute;
-  top: 420px;
-  padding-left: 80px;
-  width: 200px;
+  top: 460px;
 }
 
 .messageInput {
   position: absolute;
-  top: 440px;
-  left: 400px;
-  width: calc(60vw - 17px);
-  height: 300px;
-  border-radius: 24px;
-  border: none;
-  font-size: 24px;
-  font-family: "Poppins", sans-serif;
+  top: 475px;
+  height: 400px;
   padding: 18px;
+  width: 64vw;
   resize: none;
 }
 
 .submitButton {
   position: absolute;
-  top: 820px;
-  left: calc(60vw + 281px);
+  top: 961px;
+  left: calc(89vw - 110px);
   border: none;
   border-radius: 30px;
   background-color: var(--beige);
   color: var(--dark-blue);
-  padding: 6px 28px;
+  padding: 8px 30px;
   text-align: center;
   text-decoration: none;
   display: inline-block;
@@ -125,6 +112,11 @@
   font-weight: 700;
   margin: 4px 2px;
   cursor: pointer;
+  z-index: 1;
+}
+
+.submitButton:hover {
+  background-color: var(--green);
 }
 
 .contactpageContainer footer {
