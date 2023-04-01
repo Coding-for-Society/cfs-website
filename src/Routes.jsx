@@ -11,6 +11,7 @@ import Contact from "./pages/contact/Contact";
 import NavigationBar from "./components/navigationBar/NavigationBar";
 import Footer from "./components/footer/Footer";
 import TeamDetail from "./pages/team/teamDetail/TeamDetail";
+import Projects from "./pages/projects/Projects";
 
 export default function Routes() {
   const routes = createBrowserRouter([
@@ -37,7 +38,7 @@ export default function Routes() {
           path: "/projects",
           element: <Outlet />,
           children: [
-            { path: "", element: <h1>Projects</h1> },
+            { path: "", element: <Projects /> },
             { path: ":id", element: <h1>Dynamic Segment: Projects</h1> },
           ],
         },
