@@ -10,7 +10,7 @@
 .teamDetailContentContainer {
   padding-top: 0px;
   position: relative;
-  margin-top: -50px;
+  margin-top: -30px;
 }
 
 .teamDetailBubble {
@@ -22,7 +22,7 @@
 }
 
 .teamDetailContent {
-  padding-top: 80px;
+  padding-top: 40px;
   color: var(--beige);
   margin-left: 80px;
 }
@@ -58,14 +58,17 @@
 .teamDetailHeading {
   padding-left: 80px;
   margin-top: 0;
+  margin-bottom: 0;
+  width: 400px;
 }
 
 .teamDetailBack {
   position: absolute;
   right: 80px;
-  top: 100px;
+  top: 120px;
   text-decoration: none;
   color: var(--beige);
   font-size: 32px;
   font-weight: 700;
+  z-index: 10;
 }
