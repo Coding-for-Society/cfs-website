@@ -1,0 +1,81 @@
+.projectDetailContainer {
+  width: 100vw;
+  margin-top: 150px;
+  position: relative;
+  height: 1380px;
+  overflow: hidden;
+  margin-bottom: -300px;
+}
+
+.projectDetailContentContainer {
+  padding-top: 0px;
+  position: relative;
+  margin-top: -30px;
+}
+
+.projectDetailBubble {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: -10;
+}
+
+.projectDetailContent {
+  padding-top: 40px;
+  color: var(--beige);
+  margin-left: 80px;
+}
+
+.projectDetailImageContainer {
+  width: 350px;
+  height: 480px;
+  min-width: 350px;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+}
+
+.projectDetailImageContainer img {
+  object-fit: fill;
+  height: 100%;
+}
+
+.projectDetailGrid {
+  display: flex;
+}
+
+.projectDetailGridText p {
+  padding-top: 0;
+  margin-top: 0;
+}
+
+.projectDetailGridText {
+  padding-left: 100px;
+  width: 40%;
+}
+
+.projectDetailHeading {
+  padding-left: 80px;
+  margin-top: 0;
+  margin-bottom: 0;
+  width: 450px;
+}
+
+.projectDetailBack {
+  position: absolute;
+  right: 80px;
+  top: 120px;
+  text-decoration: none;
+  color: var(--beige);
+  font-size: 32px;
+  font-weight: 700;
+  z-index: 10;
+}
+
+.projectDetailDescriptionContainer {
+  height: 480px;
+
+  overflow-y : auto; 
+  overflow-x : hidden;
+}

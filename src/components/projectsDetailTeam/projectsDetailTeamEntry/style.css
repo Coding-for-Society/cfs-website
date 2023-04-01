@@ -1,0 +1,36 @@
+.projectsDetailTeamEntryImageContainer {
+  width: 160px;
+  height: 160px;
+  position: relative;
+  overflow: hidden;
+  border-radius: 50%;
+  background-color: #f5f5f5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.projectsDetailTeamEntryImageContainer img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.projectsDetailTeamEntry h3 {
+  font-size: 20px;
+}
+
+.projectsDetailTeamEntry {
+  text-align: center;
+  width: 160px;
+  overflow: hidden;
+}
+
+.projectsDetailTeamEntryLink {
+  display: block;
+  text-decoration: none;
+  color: var(--beige);
+  height: 200px;
+  width: 160px;
+}
