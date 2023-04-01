@@ -117,6 +117,9 @@ function Home() {
             Feel free to contact us! We are always open to new project ideas,
             feedback or support.
           </p>
+          <a href="mailto:hello@codingforsociety.com">
+            hello@codingforsociety.com
+          </a>
         </div>
 
         <ContactBubble className="contactBubble" active={activeCount >= 5} />

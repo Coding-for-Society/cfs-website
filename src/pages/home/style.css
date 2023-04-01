@@ -105,6 +105,7 @@
   top: 80px;
   left: 50%;
   margin-left: -200px;
+  text-align: center;
 }
 
 #backgroundWave {
@@ -140,4 +141,24 @@
   height: 100%;
   z-index: -20;
   background-color: white;
+}
+
+.contactBubbleText a {
+  text-decoration: none;
+  color: var(--beige);
+  font-size: 24px;
+  font-weight: 800;
+  border: 2px solid var(--green);
+  padding: 10px 20px;
+  border-radius: 50px;
+}
+
+.contactBubbleText a:hover {
+  border: 2px solid var(--pink);
+  color: var(--dark-blue);
+  background-color: var(--green);
+}
+
+.contactBubbleText p {
+  padding-bottom: 20px;
 }
