@@ -72,3 +72,9 @@
   font-weight: 700;
   z-index: 10;
 }
+
+.teamDetailContainer h2,
+.teamDetailContainer h3,
+.teamDetailContainer p {
+  color: var(--beige);
+}
