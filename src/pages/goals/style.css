@@ -2,12 +2,15 @@
   margin-top: 150px;
 }
 
-.goalsContainer h1,
 .goalsContainer h2,
 .goalsContainer h3,
 .goalsContainer p {
   margin-left: 10vw;
-  margin-right: 10vw
+  margin-right: 10vw;
+}
+
+.goalsContainer h1 {
+  margin-left: 80px;
 }
 
 .blockquote {

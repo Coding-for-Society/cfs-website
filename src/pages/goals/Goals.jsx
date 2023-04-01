@@ -11,17 +11,21 @@ function Goals() {
     components.forEach((component, index) => {
       const trigger = index === 0 ? ".goalsTitle" : `#component-${index}`;
       const start = index === 0 ? "top center" : `top+=${index * 100} center`;
-      const end = index === components.length - 1 ? "bottom center" : `top+=${(index + 1) * 100} center`;
+      const end =
+        index === components.length - 1
+          ? "bottom center"
+          : `top+=${(index + 1) * 100} center`;
 
-      gsap.timeline({
-        scrollTrigger: {
-          trigger,
-          start,
-          end,
-          scrub: true,
-          toggleActions: "play none none reverse",
-        },
-      })
+      gsap
+        .timeline({
+          scrollTrigger: {
+            trigger,
+            start,
+            end,
+            scrub: true,
+            toggleActions: "play none none reverse",
+          },
+        })
         .from(`#component-${index}`, { opacity: 0, y: 100 })
         .to(`#component-${index}`, { opacity: 0, y: -100 });
     });
@@ -32,18 +36,16 @@ function Goals() {
       <h1 className="goalsTitle">Our Goals</h1>
       <div className="blockquote">
         <p className="blockquoteText">
-          &quot;Our mission at Coding for Society is to make use of our computer science skills
-          for what we believe to be the best purpose possible: to create social value. <br />
+          &quot;Our mission at Coding for Society is to make use of our computer
+          science skills for what we believe to be the best purpose possible: to
+          create social value. <br />
           We commit to making the world a better place.&quot;
         </p>
         <p className="blockquoteAuthor">Jonas Itt</p>
         <p className="blockquoteAuthor2">Founder of Coding for Society</p>
       </div>
       <div className="goalsTextContainer">
-        <GoalsBubble
-          className="goalsBubble"
-          preserveAspectRatio="none"
-        />
+        <GoalsBubble className="goalsBubble" preserveAspectRatio="none" />
         {components.map((component) => (
           <div className="goalsText" id={component.id}>
             <h3>{component.title}</h3>
