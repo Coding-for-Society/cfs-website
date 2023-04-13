@@ -1,30 +1,35 @@
-import { useEffect } from "react";
-import gsap from "gsap";
-import ScrollTrigger from "gsap/ScrollTrigger";
+import { useEffect, useState } from "react";
 import components from "./config";
 import GoalsBubble from "./bubbles/GoalsBubble";
 import "./style.css";
 
 function Goals() {
-  useEffect(() => {
-    gsap.registerPlugin(ScrollTrigger);
-    components.forEach((component, index) => {
-      const trigger = index === 0 ? ".goalsTitle" : `#component-${index}`;
-      const start = index === 0 ? "top center" : `top+=${index * 100} center`;
-      const end = index === components.length - 1 ? "bottom center" : `top+=${(index + 1) * 100} center`;
+  const [showGoal1, setShowGoal1] = useState(false);
+  const [showGoal2, setShowGoal2] = useState(false);
+  const [showGoal3, setShowGoal3] = useState(false);
 
-      gsap.timeline({
-        scrollTrigger: {
-          trigger,
-          start,
-          end,
-          scrub: true,
-          toggleActions: "play none none reverse",
-        },
-      })
-        .from(`#component-${index}`, { opacity: 0, y: 100 })
-        .to(`#component-${index}`, { opacity: 0, y: -100 });
-    });
+  useEffect(() => {
+    function handleScroll() {
+      if (window.scrollY > 500 && window.scrollY < 1500) {
+        setShowGoal1(true);
+      } else {
+        setShowGoal1(false);
+      }
+      if (window.scrollY > 2000 && window.scrollY < 3000) {
+        setShowGoal2(true);
+      } else {
+        setShowGoal2(false);
+      }
+      if (window.scrollY > 3500 && window.scrollY < 4500) {
+        setShowGoal3(true);
+      } else {
+        setShowGoal3(false);
+      }
+    }
+    window.addEventListener("scroll", handleScroll);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
   }, []);
 
   return (
@@ -44,12 +49,18 @@ function Goals() {
           className="goalsBubble"
           preserveAspectRatio="none"
         />
-        {components.map((component) => (
-          <div className="goalsText" id={component.id}>
-            <h3>{component.title}</h3>
-            {component.text}
-          </div>
-        ))}
+        <div className={`goalsText goalsText1 ${showGoal1 ? "show" : ""}`}>
+          <h3>{components[0].title}</h3>
+          {components[0].text}
+        </div>
+        <div className={`goalsText goalsText2 ${showGoal2 ? "show" : ""}`}>
+          <h3>{components[1].title}</h3>
+          {components[1].text}
+        </div>
+        <div className={`goalsText goalsText3 ${showGoal3 ? "show" : ""}`}>
+          <h3>{components[2].title}</h3>
+          {components[2].text}
+        </div>
       </div>
       <div className="spacer" />
     </div>
