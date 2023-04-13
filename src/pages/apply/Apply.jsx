@@ -1,4 +1,5 @@
-import { FAQTSWebsite, FAQProjectEdu, FAQCFSWebsite, FAQs } from "./config";
+import FAQList from "../../components/faqList/FAQList";
+import { faqCFSW, faqEducation, faqTSW, faqApply } from "../../config";
 import ApplyBubble1 from "./bubbles/ApplyBubble1";
 import ApplyBubble2 from "./bubbles/ApplyBubble2";
 import "./style.css";
@@ -23,16 +24,16 @@ function Apply() {
         <ApplyBubble1 className="positionsBubble1" />
       </div>
       <h3 className="tswebpageText">Talente Spenden Web Page</h3>
-      <FAQTSWebsite />
+      <FAQList faqs={faqTSW} />
       <h3 className="projecteduText">Project: Education</h3>
-      <FAQProjectEdu />
+      <FAQList faqs={faqEducation} />
       <h3 className="cfswebpageText">Coding for Society Web Page</h3>
-      <FAQCFSWebsite />
+      <FAQList faqs={faqCFSW} />
       <div className="applyTitleContainer">
         <ApplyBubble2 className="positionsBubble2" />
         <h2 className="faqText">FAQs</h2>
       </div>
-      <FAQs />
+      <FAQList faqs={faqApply} />
     </div>
   );
 }

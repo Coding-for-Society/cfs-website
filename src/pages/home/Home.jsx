@@ -7,7 +7,7 @@ import ContactBubble from "./bubbles/ContactBubble";
 import SloganBubble from "./bubbles/SloganBubble";
 import TeamBubble from "./bubbles/TeamBubble";
 import ProjectSlider from "../../components/projectSlider/ProjectSlider";
-import { projectConfig, teamConfig } from "./config";
+import { projectConfig, teamConfig } from "../../config";
 import TeamSlider from "../../components/teamSlider/TeamSlider";
 
 function Home() {
@@ -15,7 +15,7 @@ function Home() {
   const [activeCount, setActiveCount] = useState(1);
 
   const activateBubbles = () => {
-    if (scroll <= 100) {
+    if (scroll <= 120) {
       setActiveCount(1);
     } else if (scroll <= 650) {
       setActiveCount(2);
@@ -47,7 +47,7 @@ function Home() {
       <div className="waveContainer">
         <div
           className="waveStatic"
-          style={{ height: `${150 + (scroll / 2000) * 2350}px` }}
+          style={{ height: `${150 + (scroll / 2000) * 2380}px` }}
         />
         <Wave
           id="backgroundWave"
@@ -117,6 +117,9 @@ function Home() {
             Feel free to contact us! We are always open to new project ideas,
             feedback or support.
           </p>
+          <a href="mailto:hello@codingforsociety.com">
+            hello@codingforsociety.com
+          </a>
         </div>
 
         <ContactBubble className="contactBubble" active={activeCount >= 5} />

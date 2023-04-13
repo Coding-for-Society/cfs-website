@@ -1,0 +1,15 @@
+.projectsList li {
+  list-style: none;
+}
+
+.projectsList ul {
+  display: grid;
+  padding: 0;
+  grid-template-columns: repeat(5, auto);
+  padding-left: 80px;
+  row-gap: 25px;
+}
+
+.projectsList {
+  margin-top: 80px;
+}

@@ -4,7 +4,7 @@
 
 .homeContainer {
   position: relative;
-  height: 3750px;
+  height: 3800px;
   margin-bottom: -250px;
 }
 
@@ -74,7 +74,8 @@
 
 .teamBubble {
   position: absolute;
-  top: 20px;
+  height: 1200px;
+  top: -50px;
   z-index: -4;
 }
 
@@ -86,7 +87,7 @@
 
 .contactContainer {
   position: absolute;
-  top: 2900px;
+  top: 2950px;
   width: 100%;
 }
 
@@ -104,6 +105,7 @@
   top: 80px;
   left: 50%;
   margin-left: -200px;
+  text-align: center;
 }
 
 #backgroundWave {
@@ -121,7 +123,7 @@
   width: 100%;
   z-index: -10;
   overflow-anchor: none;
-  max-height: 3750px;
+  max-height: 3780px;
   overflow: hidden;
 }
 
@@ -139,4 +141,24 @@
   height: 100%;
   z-index: -20;
   background-color: white;
+}
+
+.contactBubbleText a {
+  text-decoration: none;
+  color: var(--beige);
+  font-size: 24px;
+  font-weight: 800;
+  border: 2px solid var(--green);
+  padding: 10px 20px;
+  border-radius: 50px;
+}
+
+.contactBubbleText a:hover {
+  border: 2px solid var(--pink);
+  color: var(--dark-blue);
+  background-color: var(--green);
+}
+
+.contactBubbleText p {
+  padding-bottom: 20px;
 }
