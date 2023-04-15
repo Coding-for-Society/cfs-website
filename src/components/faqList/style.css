@@ -9,6 +9,7 @@
 .faq-text {
   font-size: 28px;
   font-weight: 500;
+  color: var(--dark-blue);
   font-family: 'Poppins', sans-serif;
   margin-right: 60px;
 }

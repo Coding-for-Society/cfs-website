@@ -204,58 +204,60 @@ export const projectConfig = [
   },
 ];
 
-export const faqTSW = [
+export const positionsConfig = [
   {
-    question: "Frontend Developer",
-    answer:
+    name: "Frontend Developer",
+    description:
       "Help us implement the Talente Spenden website concept using HTML and Javascript.",
+    team: "tsWebpage",
     id: 1,
   },
   {
-    question: "Backend Developer",
-    answer:
+    name: "Backend Developer",
+    description:
       "Create and maintain the databases that power the Talente Spenden website.",
-    id: 2,
-  },
-];
-
-export const faqEducation = [
-  {
-    question: "Education Consultant",
-    answer: "Support us with conducting coding projects at schools. [TBD]",
-    id: 1,
-  },
-];
-
-export const faqCFSW = [
-  {
-    question: "Full Stack Developer",
-    answer:
-      "Can you see yourself extending and maintaining this website? Do you have basic knowledge in Javascript, HTML and SQL and are a quick learner? Then this one is for you!",
-    id: 1,
-  },
-  {
-    question: "Frontend Developer",
-    answer:
-      "Help us implement our website prototype using HTML and Javascript. [TBD, just copy over some To-Dos from the Kanban board]",
+    team: "tsWebpage",
     id: 2,
   },
   {
-    question: "Backend Developer",
-    answer:
-      "Develop the SQL pipeline for this website and get practical experience with building a website.",
+    name: "Education Consultant",
+    description: "Support us with conducting coding projects at schools. [TBD]",
+    team: "education",
     id: 3,
   },
   {
-    question: "Designer",
-    answer: "Help us design the website and create a great user experience.",
+    name: "Full Stack Developer",
+    description:
+      "Can you see yourself extending and maintaining this website? Do you have basic knowledge in Javascript, HTML and SQL and are a quick learner? Then this one is for you!",
+    team: "cfsWebpage",
     id: 4,
   },
   {
-    question: "HR Manager",
-    answer:
-      "You like socializing with people and discovering people’s talents? In this position, you help us look out for people that would be a great addition to our team.",
+    name: "Frontend Developer",
+    description:
+      "Help us implement our website prototype using HTML and Javascript. [TBD, just copy over some To-Dos from the Kanban board]",
+    team: "cfsWebpage",
     id: 5,
+  },
+  {
+    name: "Backend Developer",
+    description:
+      "Develop the SQL pipeline for this website and get practical experience with building a website.",
+    team: "cfsWebpage",
+    id: 6,
+  },
+  {
+    name: "Designer",
+    description: "Help us design the website and create a great user experience.",
+    team: "cfsWebpage",
+    id: 7,
+  },
+  {
+    name: "HR Manager",
+    description:
+      "You like socializing with people and discovering people’s talents? In this position, you help us look out for people that would be a great addition to our team.",
+    team: "cfsWebpage",
+    id: 8,
   },
 ];
 
