@@ -3,7 +3,8 @@ import ApplyBubble1 from "./bubbles/ApplyBubble1";
 import ApplyBubble2 from "./bubbles/ApplyBubble2";
 import ApplyBubble3 from "./bubbles/ApplyBubble3";
 import PositionsList from "../../components/positionsList/PositionsList";
-import { positionsConfig } from "../../config";
+import { positionsConfig, faqConfig } from "../../config";
+import FaqList from "../../components/faqList/FaqList";
 import "./style.css";
 
 function Apply() {
@@ -11,6 +12,8 @@ function Apply() {
   const filteredPositions = activeFilter === ""
     ? positionsConfig
     : positionsConfig.filter((position) => position.team === activeFilter);
+  const numPositions = filteredPositions.length;
+  const height = `calc(${numPositions} * (60px + 1em))`;
 
   return (
     <div className="applyContainer">
@@ -37,20 +40,24 @@ function Apply() {
         <div className="positionsText">
           <h2>Open positions</h2>
           <div className="filter-buttons">
-            <button type="button" onClick={() => setActiveFilter("")}>All</button>
-            <button type="button" onClick={() => setActiveFilter("tsWebpage")}>
-              tsWebpage
+            <button type="button" onClick={() => setActiveFilter("")} className={activeFilter === "" ? "active" : ""}>All</button>
+            <button type="button" onClick={() => setActiveFilter("tsWebpage")} className={activeFilter === "tsWebpage" ? "active" : ""}>
+              Talente Spenden Web Page
             </button>
-            <button type="button" onClick={() => setActiveFilter("otherTeam")}>
-              otherTeam
+            <button type="button" onClick={() => setActiveFilter("education")} className={activeFilter === "education" ? "active" : ""}>
+              Project Education
+            </button>
+            <button type="button" onClick={() => setActiveFilter("cfsWebpage")} className={activeFilter === "cfsWebpage" ? "active" : ""}>
+              Coding for Society Web Page
             </button>
           </div>
           <PositionsList positions={filteredPositions} />
         </div>
-        <ApplyBubble3 className="positionsBubble" preserveAspectRatio="none" />
+        <ApplyBubble3 style={{ height }} className="positionsBubble" preserveAspectRatio="none" />
       </div>
       <div className="faqContainer">
         <h2 className="faqText">FAQs</h2>
+        <FaqList faqConfig={faqConfig} />
       </div>
     </div>
   );

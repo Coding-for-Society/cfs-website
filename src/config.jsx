@@ -261,7 +261,7 @@ export const positionsConfig = [
   },
 ];
 
-export const faqApply = [
+export const faqConfig = [
   {
     question: "What are the next steps in the application process?",
     answer:

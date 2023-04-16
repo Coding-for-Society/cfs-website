@@ -68,14 +68,15 @@
 
 .positionsContainer {
   position: relative;
-  top: 800px;
+  top: 1300px;
 }
 
 .positionsText {
   position: absolute;
-  top: 570px;
+  top: 50px;
   margin-left: 80px;
   margin-right: 80px;
+  width: calc(100vw - 160px);
 }
 
 .positionsBubble {
@@ -83,15 +84,40 @@
   top: 500px;
   width: 100vw;
   z-index: -1;
+  min-height: 200px;
+}
+
+.filter-buttons button {
+  border: none;
+  border-radius: 30px;
+  background-color: var(--beige);
+  color: var(--dark-blue);
+  padding: 8px 30px;
+  min-width: 150px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 24px;
+  font-weight: 700;
+  margin-right: 30px;
+  margin-bottom: 1em;
+  cursor: pointer;
+  z-index: 1;
+}
+
+.filter-buttons button.active {
+  background-color: var(--dark-blue);
+  color: var(--beige);
+  border: var(--beige) 3px solid;
+  padding: 5px 27px;
 }
 
 .faqContainer {
   position: relative;
-  top: 1500px;
+  top: 3200px;
 }
 
 .faqText {
-  position: absolute;
-  top: 1900px;
+  top: 0;
   margin-left: 80px;
 }
