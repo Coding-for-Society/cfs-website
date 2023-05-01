@@ -1,16 +1,14 @@
 .goalsContainer {
   margin-top: 150px;
+  height: 2300px;
 }
 
+.goalsContainer h1,
 .goalsContainer h2,
 .goalsContainer h3,
 .goalsContainer p {
   margin-left: 10vw;
-  margin-right: 10vw;
-}
-
-.goalsContainer h1 {
-  margin-left: 80px;
+  margin-right: 10vw
 }
 
 .blockquote {
@@ -54,20 +52,43 @@
 
 .goalsText {
   position: relative;
-  top: 20vh;
+  top: 200px;
+  margin-top: 200px;
+  opacity: 0;
+  transition: 0.7s ease-in-out;
+  transform: translateY(15%);
+}
+
+.goalsText.show {
+  position: relative;
+  opacity: 1;
+  transform: translateY(0);
 }
 
 .goalsText p {
   font-size: 32px;
 }
 
-.goalsText p,
-.goalsText h3 {
+.goalsText p {
   color: var(--beige);
 }
 
+.goalsText1 h3 {
+  color: var(--green);
+}
+
+.goalsText2 h3 {
+  color: var(--pink);
+}
+
+.goalsText3 h3 {
+  color: yellow;
+}
+
 .spacer {
-  height: 800px;
+  position: relative;
+  top: -200px;
+  height: 1000px;
   width: 100vw;
   background-color: var(--dark-blue);
   z-index: -1;
