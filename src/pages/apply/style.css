@@ -1,7 +1,3 @@
-.applyContainer {
-  height: 4000px;
-}
-
 .applytitleContainer h1,
 .applysubtitleContainer h2,
 .applysubtitleContainer p,
@@ -30,6 +26,7 @@
 
 .applytitleContainer {
   position: relative;
+  height: 50px;
 }
 
 .applytitleText {
@@ -49,7 +46,7 @@
 
 .applysubtitleContainer {
   position: relative;
-  top: 50px;
+  height: 1200px;
 }
 
 .applySubtitleText {
@@ -68,23 +65,34 @@
 
 .positionsContainer {
   position: relative;
-  top: 1300px;
+  top: 200px;
 }
 
 .positionsText {
   position: absolute;
-  top: 50px;
   margin-left: 80px;
   margin-right: 80px;
   width: calc(100vw - 160px);
 }
 
-.positionsBubble {
+.positionsBubble1 {
   position: absolute;
-  top: 500px;
+  top: -200px;
   width: 100vw;
   z-index: -1;
-  min-height: 200px;
+}
+
+.applySpacer {
+  position: absolute;
+  top: 50px;
+  background-color: var(--dark-blue);
+  z-index: -1;
+}
+
+.positionsBubble2 {
+  position: absolute;
+  width: 100vw;
+  z-index: -1;
 }
 
 .filter-buttons button {
@@ -114,10 +122,8 @@
 
 .faqContainer {
   position: relative;
-  top: 3200px;
 }
 
 .faqText {
-  top: 0;
   margin-left: 80px;
 }

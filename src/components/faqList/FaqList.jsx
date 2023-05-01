@@ -10,11 +10,11 @@ const FaqList = ({ faqConfig }) => {
   };
 
   return (
-    <div>
+    <div className="faqList">
       {faqConfig.map((faq, index) => (
         <div key={faq.id}>
-          <ExpandIcon expanded={expandedQuestion === faq.id} className="expandIcon" onClick={() => handleQuestionClick(faq.id)} />
           <h3>{faq.question}</h3>
+          <ExpandIcon expanded={expandedQuestion === faq.id} className="expandIcon" onClick={() => handleQuestionClick(faq.id)} />
           {expandedQuestion === faq.id && (
             <div>
               <p>{faq.answer}</p>

@@ -1,6 +1,12 @@
+.faqList {
+  margin-left: 80px;
+  margin-right: 80px;
+}
+
 .expandIcon {
-  display: flex;
-  align-items: end;
+  position: absolute;
   cursor: pointer;
   width: 50px;
+  margin-top: -5.5em;
+  right: 100px;
 }

@@ -1,8 +1,8 @@
 const ExpandIcon = ({ expanded, ...props }) => (
   <svg
-    width="60"
+    width="61"
     height="60"
-    viewBox="0 0 60 60"
+    viewBox="0 0 61 60"
     fill="none"
     xmlns="http://www.w3.org/2000/svg"
     {...props}

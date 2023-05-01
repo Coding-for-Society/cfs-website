@@ -282,7 +282,7 @@ export const faqConfig = [
   },
   {
     question:
-      "Do I have to be a current scholarship owner of the Deutschlandstipendium?",
+      "Do I have to be a current scholarship holder of the Deutschlandstipendium?",
     answer: "This is not a strict requirement.",
     id: 4,
   },

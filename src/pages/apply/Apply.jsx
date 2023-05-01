@@ -2,6 +2,7 @@ import { useState } from "react";
 import ApplyBubble1 from "./bubbles/ApplyBubble1";
 import ApplyBubble2 from "./bubbles/ApplyBubble2";
 import ApplyBubble3 from "./bubbles/ApplyBubble3";
+import ApplyBubble4 from "./bubbles/ApplyBubble4";
 import PositionsList from "../../components/positionsList/PositionsList";
 import { positionsConfig, faqConfig } from "../../config";
 import FaqList from "../../components/faqList/FaqList";
@@ -13,10 +14,12 @@ function Apply() {
     ? positionsConfig
     : positionsConfig.filter((position) => position.team === activeFilter);
   const numPositions = filteredPositions.length;
-  const height = `calc(${numPositions} * (60px + 1em))`;
+  const spacerHeight = `calc(max(calc(${numPositions} * 150px + 800px), 1000px) - 1000px)`;
+  const containerHeight = `calc(1600px + ${spacerHeight})`;
+  const pageHeight = `calc(2000px + ${containerHeight})`;
 
   return (
-    <div className="applyContainer">
+    <div className="applyContainer" style={{ height: pageHeight }}>
       <div className="applytitleContainer">
         <h1 className="applytitleText">Make a <span className="dark">difference</span></h1>
         <ApplyBubble1 className="applytitleBubble" preserveAspectRatio="none" />
@@ -30,8 +33,8 @@ function Apply() {
             Found something <span className="green">you can see yourself</span> working on in the list below? Or
             just considering an unsolicited application?
             <br />
-            Great! Just fill in this form and we will get back to you as soon as
-            possible.
+            Great! Just send us an e-mail with your motivation and CV and we will get back to you as
+            soon as possible.
           </p>
         </div>
         <ApplyBubble2 className="applysubtitleBubble" />
@@ -53,9 +56,11 @@ function Apply() {
           </div>
           <PositionsList positions={filteredPositions} />
         </div>
-        <ApplyBubble3 style={{ height }} className="positionsBubble" preserveAspectRatio="none" />
+        <ApplyBubble3 className="positionsBubble1" preserveAspectRatio="none" />
+        <div className="applySpacer" style={{ height: spacerHeight }} />
+        <ApplyBubble4 className="positionsBubble2" preserveAspectRatio="none" style={{ top: spacerHeight }} />
       </div>
-      <div className="faqContainer">
+      <div className="faqContainer" style={{ top: containerHeight }}>
         <h2 className="faqText">FAQs</h2>
         <FaqList faqConfig={faqConfig} />
       </div>

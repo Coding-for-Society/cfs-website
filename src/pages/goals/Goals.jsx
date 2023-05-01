@@ -56,7 +56,7 @@ function Goals() {
           {components[2].text}
         </div>
       </div>
-      <div className="spacer" />
+      <div className="goalsSpacer" />
     </div>
   );
 }
