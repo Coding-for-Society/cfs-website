@@ -271,7 +271,7 @@ export const faqConfig = [
   {
     question: "Do I have to study computer science?",
     answer:
-      "No, all study areas are welcome. We are also looking for members in the areas: design, ...",
+      "No, all study areas are welcome. We are also looking for educators, public speakers and designers, to name only a few.",
     id: 2,
   },
   {
