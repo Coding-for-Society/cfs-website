@@ -8,10 +8,13 @@
   margin-right: 100px;
 }
 
+.faqList a {
+  text-decoration: none;
+}
+
 .expandIcon {
   position: absolute;
   cursor: pointer;
   width: 50px;
-  margin-top: -.5em;
   right: 100px;
 }
