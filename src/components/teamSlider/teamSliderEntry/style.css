@@ -3,6 +3,7 @@
   height: 100%;
   position: relative;
   text-align: center;
+  scroll-snap-align: start;
 }
 
 .teamSliderEntryName {
