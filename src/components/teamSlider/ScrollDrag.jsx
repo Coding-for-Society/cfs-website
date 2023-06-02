@@ -16,6 +16,7 @@ export class ScrollDrag extends React.Component {
   onMouseDown = e => {
     this.setState({ ...this.state, isScrolling: true, 
      clientX: e.clientX });
+     console.log("onMouseDown");
   };
 
   onMouseUp = () => {
@@ -24,9 +25,11 @@ export class ScrollDrag extends React.Component {
 
   onMouseMove = e => {
     const { clientX, scrollX } = this.state;
+    console.log(scrollX +" "+ e.clientX +" "+ clientX);
     if (this.state.isScrolling) {
-      this.ref.current.scrollLeft = scrollX + e.clientX - clientX;
-      this.state.scrollX = scrollX + e.clientX - clientX;
+      //this.ref.current.scrollLeft = scrollX + e.clientX - clientX;
+      document.getElementById("scrollDrag").scrollLeft= scrollX + clientX - e.clientX;
+      this.state.scrollX = document.getElementById("scrollDrag").scrollLeft;
       this.state.clientX = e.clientX;
     }
   };
@@ -34,12 +37,12 @@ export class ScrollDrag extends React.Component {
   render() {
     const { ref, rootClass } = this.props;
     return (
-      <div
+      <div className = "scrollDrag"
+      id = "scrollDrag"
         ref={ref}
         onMouseDown={this.onMouseDown}
         onMouseUp={this.onMouseUp}
         onMouseMove={this.onMouseMove}
-        className={rootClass}
       >
         {React.Children.map(this.props.children, child =>
             React.Children.only(child))}

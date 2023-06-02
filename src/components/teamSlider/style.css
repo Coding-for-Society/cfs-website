@@ -4,8 +4,12 @@
   padding: 20px 60px;
   scroll-snap-type: both mandatory;
   width: 100vw;
-  overflow-x: scroll;
+  /**overflow-x: scroll; **/
   /** TODO: disable scroll-bar **/
+}
+
+.scrollDrag {
+  overflow-x: scroll;
 }
 
 .teamSlider {

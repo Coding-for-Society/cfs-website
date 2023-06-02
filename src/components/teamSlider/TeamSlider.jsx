@@ -16,20 +16,20 @@ export default function TeamSlider(props) {
   const { team } = props;
 
   return (
-    <div
+    <ScrollDrag 
       id="team-slider"
-      className="teamSliderEntryList"
     >
-      <button type="button" onClick={sayHello}>Default</button>;
-      {Object.values(team).map((member, i, { length }) => (
-        <div
-          key={member.id}
-          className={i + 1 === length ? "lastTeamSliderItem" : ""}
-        >
-          <TeamSliderEntry member={member} />
-        </div>
-      ))}
-    </div>
+      <div className="teamSliderEntryList">
+        <button type="button" onClick={sayHello}>Default</button>;
+        {Object.values(team).map((member, i, { length }) => (
+          <div
+            key={member.id}
+            className={i + 1 === length ? "lastTeamSliderItem" : ""}
+          >
+            <TeamSliderEntry member={member} />
+          </div>
+        ))}
+      </div></ScrollDrag>
   );
 }
 /* eslint-disable */
