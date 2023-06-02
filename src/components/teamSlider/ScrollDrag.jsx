@@ -2,6 +2,8 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
+
+
 export class ScrollDrag extends React.Component {
   constructor(props) {
     super(props);
@@ -11,6 +13,16 @@ export class ScrollDrag extends React.Component {
       clientX: 0,
       scrollX: 0,
     };
+  }
+
+  scroll() {
+    const element = document.getElementById("scrollDrag");
+    element.scrollBy({
+      top: 0,
+      left: 1000,
+      behavior: "smooth",
+    });
+    console.log(element)
   }
 
   onMouseDown = e => {
@@ -37,6 +49,7 @@ export class ScrollDrag extends React.Component {
   render() {
     const { ref, rootClass } = this.props;
     return (
+      <div>
       <div className = "scrollDrag"
       id = "scrollDrag"
         ref={ref}
@@ -46,7 +59,13 @@ export class ScrollDrag extends React.Component {
       >
         {React.Children.map(this.props.children, child =>
             React.Children.only(child))}
+            
       </div>
+      <div>
+        <button className= "scrollButton" onClick={this.scroll}>Links</button>
+        <button className= "scrollButton" onClick={this.scroll}>Rechts</button>
+        </div>
+        </div>
     );
   }
 }
@@ -61,6 +80,8 @@ ScrollDrag.propTypes = {
   rootClass: PropTypes.string,
   children: PropTypes.string,
 };
+
+
 
 export default ScrollDrag;
 /* eslint-disable */

@@ -12,6 +12,9 @@
   overflow-x: scroll;
 }
 
+.scrollButton {
+}
+
 .teamSlider {
   display: flex;
   width: 100%;
