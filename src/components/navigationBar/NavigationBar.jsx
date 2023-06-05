@@ -15,8 +15,11 @@ export default function NavigationBar() {
     const changeWidth = () => {
       setWidth(window.innerWidth);
     };
-
     window.addEventListener("resize", changeWidth);
+
+    return () => {
+      window.removeEventListener("resize", changeWidth);
+    };
   });
 
   useEffect(() => {
@@ -36,7 +39,7 @@ export default function NavigationBar() {
       </div>
       {width < 800 ? (
         <div>
-          <button type="button" onClick={toggleOpen}>
+          <button className="hamburger" type="button" onClick={toggleOpen}>
             Open
           </button>
           {open && <h1 style={{ color: "white" }}>Yaaaaaay!</h1>}
