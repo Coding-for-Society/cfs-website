@@ -1,39 +1,78 @@
-import FAQList from "../../components/faqList/FAQList";
-import { faqCFSW, faqEducation, faqTSW, faqApply } from "../../config";
+import { useState } from "react";
+import ArrowIcon from "./img/ArrowIcon";
 import ApplyBubble1 from "./bubbles/ApplyBubble1";
-import ApplyBubble2 from "./bubbles/ApplyBubble2";
+import ApplyBubble3 from "./bubbles/ApplyBubble3";
+import ApplyBubble4 from "./bubbles/ApplyBubble4";
+import PositionsList from "../../components/positionsList/PositionsList";
+import FaqList from "../../components/faqList/FaqList";
+import { positionsConfig, faqConfig } from "../../config";
 import "./style.css";
 
 function Apply() {
+  const [activeFilter, setActiveFilter] = useState("");
+  const filteredPositions = activeFilter === ""
+    ? positionsConfig
+    : positionsConfig.filter((position) => position.team === activeFilter);
+  const numPositions = filteredPositions.length;
+  const spacerHeight = `max(calc(${numPositions} * 90px), 300px)`;
+  const containerHeight = `calc(2400px + ${spacerHeight})`;
+  const pageHeight = `calc(900px + ${containerHeight})`;
+
   return (
-    <div className="applyContainer">
-      <div className="applytitleText">
-        <h1>Join us</h1>
-        <p>
-          Make a difference in the world with us!
-          <br />
-          Found something you can see yourself working on in the list below? Or
-          just considering an unsolicited application?
-          <br />
-          Great! Just fill in this form and we will get back to you as soon as
-          possible.
-        </p>
+    <div className="applyContainer" style={{ height: pageHeight }}>
+      <div className="applytitleContainer">
+        <h1 className="applytitleText">Make a <span className="dark">difference</span></h1>
+        <ApplyBubble1 className="applytitleBubble" preserveAspectRatio="none" />
       </div>
-      <div className="positionsTitleContainer">
-        <h2 className="positionsText">Open positions</h2>
-        <ApplyBubble1 className="positionsBubble1" />
+      <div className="arrowContainer">
+        {window.innerHeight < 1200 && <ArrowIcon />}
       </div>
-      <h3 className="tswebpageText">Talente Spenden Web Page</h3>
-      <FAQList faqs={faqTSW} />
-      <h3 className="projecteduText">Project: Education</h3>
-      <FAQList faqs={faqEducation} />
-      <h3 className="cfswebpageText">Coding for Society Web Page</h3>
-      <FAQList faqs={faqCFSW} />
-      <div className="applyTitleContainer">
-        <ApplyBubble2 className="positionsBubble2" />
+      <div className="positionsContainer">
+        <div className="positionsText">
+          <h2>Open positions</h2>
+          <div className="filter-buttons">
+            <button
+              type="button"
+              onClick={() => setActiveFilter("")}
+              className={activeFilter === "" ? "active" : ""}
+            >All
+            </button>
+            <button
+              type="button"
+              onClick={() => setActiveFilter("tsWebpage")}
+              className={activeFilter === "tsWebpage" ? "active" : ""}
+            >
+              Talente Spenden Web Page
+            </button>
+            <button
+              type="button"
+              onClick={() => setActiveFilter("education")}
+              className={activeFilter === "education" ? "active" : ""}
+            >
+              Project Education
+            </button>
+            <button
+              type="button"
+              onClick={() => setActiveFilter("cfsWebpage")}
+              className={activeFilter === "cfsWebpage" ? "active" : ""}
+            >
+              Coding for Society Web Page
+            </button>
+          </div>
+          <PositionsList positions={filteredPositions} />
+        </div>
+        <ApplyBubble3 className="positionsBubble1" preserveAspectRatio="none" />
+        <div className="applySpacer" style={{ height: spacerHeight }} />
+        <ApplyBubble4
+          className="positionsBubble2"
+          preserveAspectRatio="none"
+          style={{ top: spacerHeight }}
+        />
+      </div>
+      <div className="faqContainer" style={{ top: containerHeight }}>
         <h2 className="faqText">FAQs</h2>
+        <FaqList faqConfig={faqConfig} />
       </div>
-      <FAQList faqs={faqApply} />
     </div>
   );
 }

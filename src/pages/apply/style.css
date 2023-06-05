@@ -1,52 +1,118 @@
-.applyContainer h1,
-.applyContainer h3,
-.applyContainer p {
+.applytitleContainer h1,
+.applysubtitleContainer h2,
+.applysubtitleContainer p,
+.positionsContainer h2,
+.positionsContainer h3,
+.positionsContainer p {
+  color: var(--beige);
+}
+
+.faqContainer h2,
+.faqContainer p {
   color: var(--dark-blue);
+}
+
+.dark {
+  color: var(--dark-blue);
+}
+
+.green {
+  color: var(--green);
 }
 
 .applyContainer {
   margin-top: 150px;
 }
 
-.applyContainer h2 {
-  color: var(--beige);
-}
-
-.applytitleText,
-.tswebpageText,
-.projecteduText,
-.cfswebpageText {
-  margin-left: 80px;
-  margin-right: 50px;
-}
-
-.positionsTitleContainer {
+.applytitleContainer {
   position: relative;
+  height: 50px;
 }
 
-.applyTitleContainer {
+.applytitleText {
+  position: absolute;
+  top: 250px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.applytitleBubble {
+  position: absolute;
+  width: calc(50vw - 3em);
+  top: -50px;
+  left: 0;
+  z-index: -1;
+}
+
+.arrowContainer {
+  position: absolute;
+  left: 50%;
+  top: 90%;
+  transform: translateX(-50%);
+}
+
+.positionsContainer {
   position: relative;
+  top: 850px;
 }
 
 .positionsText {
-  margin-top: 50px;
+  position: absolute;
   margin-left: 80px;
-}
-
-.faqText {
-  padding-top: 0;
-  padding-left: 80px;
-  padding-right: 50px;
+  margin-right: 80px;
+  width: calc(100vw - 160px);
 }
 
 .positionsBubble1 {
   position: absolute;
-  top: -30px;
+  top: -80px;
+  width: 100vw;
+  z-index: -1;
+}
+
+.applySpacer {
+  position: absolute;
+  top: 50px;
+  width: 100vw;
+  background-color: var(--dark-blue);
   z-index: -1;
 }
 
 .positionsBubble2 {
   position: absolute;
-  top: -20px;
+  width: 100vw;
   z-index: -1;
+}
+
+.filter-buttons button {
+  border: none;
+  border-radius: 30px;
+  background-color: var(--beige);
+  color: var(--dark-blue);
+  padding: 8px 30px;
+  min-width: 150px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 24px;
+  font-weight: 700;
+  margin-right: 30px;
+  margin-bottom: 1em;
+  cursor: pointer;
+  z-index: 1;
+}
+
+.filter-buttons button.active {
+  background-color: var(--dark-blue);
+  color: var(--beige);
+  border: var(--beige) 3px solid;
+  padding: 5px 27px;
+}
+
+.faqContainer {
+  position: relative;
+}
+
+.faqText {
+  margin-left: 80px;
 }

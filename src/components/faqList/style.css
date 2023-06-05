@@ -1,43 +1,20 @@
-/* styles for FAQ component */
-
-.faq-item {
+.faqList {
   margin-left: 80px;
+  margin-right: 80px;
 }
 
-.faq-item,
-.faq-question,
-.faq-text {
-  font-size: 28px;
-  font-weight: 500;
-  font-family: 'Poppins', sans-serif;
-  margin-right: 60px;
+.faqList h3,
+.faqList p {
+  margin-right: 100px;
 }
 
-.faq-answer {
-  font-size: 24px;
-  font-weight: 400;
-  font-family: 'Poppins', sans-serif;
+.faqList a {
+  text-decoration: none;
 }
 
-.faq-question {
-  display: flex;
-  align-items: center;
+.expandIcon {
+  position: absolute;
   cursor: pointer;
-}
-
-.faq-text {
-  flex-grow: 1;
-}
-
-.faq-answer {
-  margin-top: 10px;
-  margin-left: 30px;
-  margin-bottom: 30px;
-}
-
-/* make the FAQ icon smaller and gray */
-.faq-icon {
-  color: #BDBDBD;
-  font-size: 10px;
-  margin-right: 20px;
+  width: 50px;
+  right: 100px;
 }
