@@ -25,11 +25,15 @@ function Apply() {
         <ApplyBubble1 className="applytitleBubble" preserveAspectRatio="none" />
       </div>
       <div className="arrowContainer">
-        {window.innerHeight < 1200 && <ArrowIcon />}
+        {window.innerHeight < 1200 && (
+          <a href="#positions">
+            <ArrowIcon />
+          </a>
+        )}
       </div>
       <div className="positionsContainer">
         <div className="positionsText">
-          <h2>Open positions</h2>
+          <h2 id="positions">Open positions</h2>
           <div className="filter-buttons">
             <button
               type="button"

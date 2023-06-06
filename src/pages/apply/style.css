@@ -1,3 +1,7 @@
+html {
+  scroll-behavior: smooth;
+}
+
 .applytitleContainer h1,
 .applysubtitleContainer h2,
 .applysubtitleContainer p,
