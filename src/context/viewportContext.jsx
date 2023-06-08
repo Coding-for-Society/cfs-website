@@ -1,4 +1,5 @@
 import { createContext, useState, useEffect, useContext } from "react";
+// Useful Resource: https://blog.logrocket.com/developing-responsive-layouts-with-react-hooks/
 
 const viewportContext = createContext({});
 
@@ -27,8 +28,11 @@ const ViewportProvider = ({ children }) => {
 };
 
 const useViewport = () => {
-  const { width, height } = useContext(viewportContext);
-  return { width, height };
+  const context = useContext(viewportContext);
+  if (!context) {
+    throw new Error(`useViewport must be used inside a ViewportProvider`);
+  }
+  return context;
 };
 
 export { ViewportProvider, useViewport };
