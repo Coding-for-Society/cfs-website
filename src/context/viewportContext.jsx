@@ -1,7 +1,8 @@
-import { useEffect, useState } from "react";
+import { createContext, useState, useEffect, useContext } from "react";
 
-const useViewport = () => {
-  // Width State
+const viewportContext = createContext({});
+
+const ViewportProvider = ({ children }) => {
   const [width, setWidth] = useState(window.innerWidth);
   const [height, setHeight] = useState(window.innerHeight);
 
@@ -18,7 +19,16 @@ const useViewport = () => {
     };
   }, []);
 
+  return (
+    <viewportContext.Provider value={{ width, height }}>
+      {children}
+    </viewportContext.Provider>
+  );
+};
+
+const useViewport = () => {
+  const { width, height } = useContext(viewportContext);
   return { width, height };
 };
 
-export default useViewport;
+export { ViewportProvider, useViewport };
