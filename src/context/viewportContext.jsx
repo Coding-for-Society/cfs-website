@@ -1,4 +1,4 @@
-import { createContext, useState, useEffect, useContext } from "react";
+import { createContext, useState, useEffect, useContext, useMemo } from "react";
 // Useful Resource: https://blog.logrocket.com/developing-responsive-layouts-with-react-hooks/
 
 const viewportContext = createContext({});
@@ -6,6 +6,18 @@ const viewportContext = createContext({});
 const ViewportProvider = ({ children }) => {
   const [width, setWidth] = useState(window.innerWidth);
   const [height, setHeight] = useState(window.innerHeight);
+
+  /** Performance optimisation:
+   * Prevents unnecessary rerenders of child components
+   * if ViewportProivder is forced to rerender by a parent component,
+   * but neither width nor height change */
+  const contextValue = useMemo(
+    () => ({
+      width,
+      height,
+    }),
+    [width, height],
+  );
 
   // Registering resize event listener on mounting
   useEffect(() => {
@@ -21,7 +33,7 @@ const ViewportProvider = ({ children }) => {
   }, []);
 
   return (
-    <viewportContext.Provider value={{ width, height }}>
+    <viewportContext.Provider value={contextValue}>
       {children}
     </viewportContext.Provider>
   );
