@@ -5,7 +5,16 @@ const useViewport = () => {
   const [width, setWidth] = useState(window.innerWidth);
 
   // Registering resize event listener on mounting
-  useEffect(() => {}, []);
+  useEffect(() => {
+    const changeWidth = () => {
+      setWidth(window.innerWidth);
+    };
+    window.addEventListener("resize", changeWidth);
+
+    return () => {
+      window.removeEventListener("resize", changeWidth);
+    };
+  }, []);
 
   return { width };
 };
