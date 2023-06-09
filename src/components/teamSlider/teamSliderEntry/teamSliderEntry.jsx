@@ -1,5 +1,7 @@
+/* eslint-disable */
 import "./style.css";
 import { useState } from "react";
+import { Link } from "react-router-dom";
 import { motion, AnimatePresence } from "framer-motion";
 import TeamBubble1 from "../bubbles/TeamBubble1";
 
@@ -30,6 +32,17 @@ export default function TeamSliderEntry(props) {
           alt={member.name}
           className="teamSliderEntryImg"
         />
+        <div className="imageOverlay">
+          {descActive && (
+            <Link
+              draggable="false"
+              className="readMore"
+              to={`/projects/`}
+            >
+              Find out more
+            </Link>
+          )}
+        </div>
       </div>
       <AnimatePresence>
         {descActive && (
@@ -51,3 +64,4 @@ export default function TeamSliderEntry(props) {
     </motion.div>
   );
 }
+/* eslint-disable */

@@ -33,6 +33,7 @@ export class ScrollDrag extends React.Component {
 
   onMouseUp = () => {
     this.setState({ ...this.state, isScrolling: false });
+    e.preventDefault();
   };
 
   onMouseMove = e => {

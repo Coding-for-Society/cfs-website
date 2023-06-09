@@ -8,6 +8,11 @@
   /** TODO: disable scroll-bar **/
 }
 
+.carousel {
+  min-height: 45vh;
+  min-width: 99vw;
+}
+
 .scrollDrag {
   overflow-x: scroll;
 }
