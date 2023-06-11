@@ -5,6 +5,7 @@ import ApplyBubble3 from "./bubbles/ApplyBubble3";
 import ApplyBubble4 from "./bubbles/ApplyBubble4";
 import PositionsList from "../../components/positionsList/PositionsList";
 import FaqList from "../../components/faqList/FaqList";
+import { useViewport } from "../../context/viewportContext";
 import { positionsConfig, faqConfig } from "../../config";
 import "./style.css";
 
@@ -14,7 +15,8 @@ function Apply() {
     ? positionsConfig
     : positionsConfig.filter((position) => position.team === activeFilter);
   const numPositions = filteredPositions.length;
-  const spacerHeight = `max(calc(${numPositions} * 90px), 300px)`;
+  const { width, height } = useViewport();
+  const spacerHeight = `max(calc(${numPositions} * 90px + ${(width < 720 ? 200 : 0)}px), 300px)`;
   const containerHeight = `calc(2400px + ${spacerHeight})`;
   const pageHeight = `calc(900px + ${containerHeight})`;
 
