@@ -1,4 +1,3 @@
-/* eslint-disable */
 import "./style.css";
 import { useState } from "react";
 import { Link } from "react-router-dom";
@@ -37,7 +36,7 @@ export default function TeamSliderEntry(props) {
             <Link
               draggable="false"
               className="readMore"
-              to={`/projects/`}
+              to="/projects/"
             >
               Find out more
             </Link>
@@ -64,4 +63,3 @@ export default function TeamSliderEntry(props) {
     </motion.div>
   );
 }
-/* eslint-disable */
