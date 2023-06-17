@@ -13,7 +13,7 @@ function Footer() {
           <h2 className="logoText">Coding for Society.</h2>
           <div>
             <Link to="/apply" className="applyLink">Apply</Link>
-            <Link to="/contact" className="contactLink">Contact</Link>
+            <Link to="mailto:hello@codingforsociety.com" className="contactLink">Contact</Link>
           </div>
         </div>
         {width > 1080 && (

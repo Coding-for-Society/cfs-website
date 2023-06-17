@@ -16,7 +16,7 @@ const FaqList = ({ faqConfig }) => {
 
   return (
     <div className="faqList">
-      {faqConfig.map((faq) => (
+      {faqConfig.map((faq, index) => (
         <div key={faq.id}>
           <h3>
             <a href={`#${faq.id}`} onClick={() => handleQuestionClick(faq.id)}>
@@ -29,7 +29,7 @@ const FaqList = ({ faqConfig }) => {
               <p>{faq.answer}</p>
             </div>
           )}
-          <hr />
+          {index !== faq.length - 1 && <hr />}
         </div>
       ))}
     </div>

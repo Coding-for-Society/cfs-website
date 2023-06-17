@@ -7,7 +7,6 @@ import {
 import Home from "./pages/home/Home";
 import Apply from "./pages/apply/Apply";
 import Team from "./pages/team/Team";
-import Contact from "./pages/contact/Contact";
 import Goals from "./pages/goals/Goals";
 import NavigationBar from "./components/navigationBar/NavigationBar";
 import Footer from "./components/footer/Footer";
@@ -60,11 +59,6 @@ export default function Routes() {
         {
           path: "/apply",
           element: <Apply />,
-          children: [],
-        },
-        {
-          path: "/contact",
-          element: <Contact />,
           children: [],
         },
       ],
