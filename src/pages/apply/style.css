@@ -26,6 +26,7 @@ html {
 
 .applyContainer {
   margin-top: 150px;
+  margin-bottom: 150px;
 }
 
 .applytitleContainer {
@@ -54,6 +55,12 @@ html {
   left: 50%;
   top: 90%;
   transform: translateX(-50%);
+  transition: ease-in-out 0.2s;
+}
+
+.arrowContainer:hover {
+  transform: translateX(-50%) translateY(-8px);
+  transition: ease-in-out 0.2s;
 }
 
 .positionsContainer {

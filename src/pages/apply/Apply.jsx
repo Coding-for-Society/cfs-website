@@ -15,8 +15,8 @@ function Apply() {
     ? positionsConfig
     : positionsConfig.filter((position) => position.team === activeFilter);
   const numPositions = filteredPositions.length;
-  const { width, height } = useViewport();
-  const spacerHeight = `max(calc(${numPositions} * 90px + ${(width < 720 ? 200 : 0)}px), 300px)`;
+  const { width } = useViewport();
+  const spacerHeight = `max(calc(${numPositions} * ${width < 1200 ? 120 : 90}px), 300px)`;
   const containerHeight = `calc(2400px + ${spacerHeight})`;
   const pageHeight = `calc(900px + ${containerHeight})`;
 
