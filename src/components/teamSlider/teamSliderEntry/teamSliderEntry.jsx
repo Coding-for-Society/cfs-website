@@ -26,22 +26,13 @@ export default function TeamSliderEntry(props) {
       onMouseLeave={handleLeave}
     >
       <div className="teamSliderImgContainer">
-        <img
-          src={member.image}
-          alt={member.name}
-          className="teamSliderEntryImg"
-        />
-        <div className="imageOverlay">
-          {descActive && (
-            <Link
-              draggable="false"
-              className="readMore"
-              to="/projects/"
-            >
-              Find out more
-            </Link>
-          )}
-        </div>
+        <Link to={`/team/${member.id}`}>
+          <img
+            src={member.image}
+            alt={member.name}
+            className="teamSliderEntryImg"
+          />
+        </Link>
       </div>
       <AnimatePresence>
         {descActive && (

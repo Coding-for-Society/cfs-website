@@ -1,6 +1,7 @@
 .teamSliderEntry {
-  width: 320px;
+  width: 250px;
   height: 100%;
+  padding-left: 40px;
   position: relative;
   text-align: center;
   scroll-snap-align: start;
@@ -19,7 +20,6 @@
 
 .teamSliderImgContainer {
   height: 350px;
-  width: 250px;
   overflow: hidden;
   display: flex;
   justify-content: center;
