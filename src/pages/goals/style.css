@@ -1,6 +1,6 @@
 .goalsContainer {
   margin-top: 150px;
-  height: 2300px;
+  margin-bottom: -50px;
 }
 
 .goalsContainer h1,
@@ -23,7 +23,7 @@
   text-align: center;
   font-style: italic;
   font-size: 36px;
-  width: 1000px;
+  max-width: 1000px;
 }
 
 .blockquoteAuthor {
@@ -41,6 +41,8 @@
 
 .goalsTextContainer {
   position: relative;
+  background-color: var(--dark-blue);
+  padding-bottom: 150px;
 }
 
 .goalsBubble {
@@ -53,10 +55,11 @@
 .goalsText {
   position: relative;
   top: 200px;
-  margin-top: 200px;
+  margin-top: 100px;
+  margin-bottom: 150px;
   opacity: 0;
   transition: 0.7s ease-in-out;
-  transform: translateY(15%);
+  transform: translateY(50px);
 }
 
 .goalsText.show {
@@ -83,14 +86,4 @@
 
 .goalsText3 h3 {
   color: yellow;
-}
-
-.goalsSpacer {
-  position: relative;
-  top: -200px;
-  height: 1000px;
-  width: 100vw;
-  background-color: var(--dark-blue);
-  z-index: -1;
-  margin-bottom: -250px;
 }

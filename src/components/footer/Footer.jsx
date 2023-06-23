@@ -1,10 +1,12 @@
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import FooterBubble from "./FooterBubble";
 import { useViewport } from "../../context/viewportContext";
 import "./style.css";
 
 function Footer() {
   const { width } = useViewport();
+  const location = useLocation();
+  const isDark = location.pathname === "/goals";
 
   return (
     <footer>
@@ -45,7 +47,7 @@ function Footer() {
           </>
         )}
       </div>
-      <FooterBubble className="footerBubble" preserveAspectRatio="none" />
+      <FooterBubble className="footerBubble" preserveAspectRatio="none" style={isDark ? { backgroundColor: 'var(--dark-blue)' } : {}} />
     </footer>
   );
 }
