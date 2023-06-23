@@ -4,8 +4,8 @@ const TeamBubble = (props) => {
   return (
     <svg
       width={2325}
-      height={982}
-      viewBox="0 0 2325 982"
+      height={900}
+      viewBox="0 20 2325 900"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
       {...props}

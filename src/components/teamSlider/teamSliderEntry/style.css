@@ -1,10 +1,10 @@
 .teamSliderEntry {
   width: 250px;
   height: 100%;
+  padding-top: 40px;
   padding-left: 40px;
   position: relative;
   text-align: center;
-  scroll-snap-align: start;
 }
 
 .teamSliderEntryName {
@@ -43,20 +43,9 @@
   filter: grayscale(0%); /* FF 35+ */
 }
 
-.readMoreTeam {
-  text-decoration: none;
-  color: var(--beige);
-  font-size: 24px;
-  font-weight: 600;
-}
-
-.readMoreTeam:hover {
-  color: var(--green);
-}
-
 .memberBubbleContainer {
   position: absolute;
-  top: -30px;
+  top: 0px;
   left: 0px;
   z-index: -1;
 }
