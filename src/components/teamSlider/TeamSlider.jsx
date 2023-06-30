@@ -18,8 +18,8 @@ export default function TeamSlider(props) {
       elementType="div"
       options={flickityOptions}
       disableImagesLoaded={false}
-      reloadOnUpdate
-      static
+      reloadOnUpdate={false}
+      static={false}
     >
       {Object.values(team).map((member, i, { length }) => (
         <div
