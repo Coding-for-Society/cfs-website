@@ -13,6 +13,7 @@ import Footer from "./components/footer/Footer";
 import TeamDetail from "./pages/team/teamDetail/TeamDetail";
 import Projects from "./pages/projects/Projects";
 import ProjectsDetail from "./pages/projects/projectsDetail/ProjectsDetail";
+import ScrollToTop from "./components/scrollToTop/ScrollToTop";
 
 export default function Routes() {
   const routes = createBrowserRouter([
@@ -20,6 +21,7 @@ export default function Routes() {
       path: "/",
       element: (
         <>
+          <ScrollToTop />
           <NavigationBar />
           <Outlet />
           <Footer />
