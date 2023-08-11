@@ -115,3 +115,16 @@ footer a {
   height: 400px;
   z-index: -1;
 }
+
+@media (max-width: 1080px) {
+  .footerColumns {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .logoColumn {
+    margin-left: 0;
+    margin-right: 0;
+  }
+}

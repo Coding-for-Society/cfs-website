@@ -1,3 +1,7 @@
+html {
+  scroll-behavior: smooth;
+}
+
 .applytitleContainer h1,
 .applysubtitleContainer h2,
 .applysubtitleContainer p,
@@ -22,6 +26,7 @@
 
 .applyContainer {
   margin-top: 150px;
+  margin-bottom: 150px;
 }
 
 .applytitleContainer {
@@ -34,6 +39,7 @@
   top: 250px;
   left: 50%;
   transform: translateX(-50%);
+  white-space: nowrap;
 }
 
 .applytitleBubble {
@@ -49,6 +55,12 @@
   left: 50%;
   top: 90%;
   transform: translateX(-50%);
+  transition: ease-in-out 0.2s;
+}
+
+.arrowContainer:hover {
+  transform: translateX(-50%) translateY(-8px);
+  transition: ease-in-out 0.2s;
 }
 
 .positionsContainer {

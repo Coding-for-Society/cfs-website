@@ -7,13 +7,13 @@ import {
 import Home from "./pages/home/Home";
 import Apply from "./pages/apply/Apply";
 import Team from "./pages/team/Team";
-import Contact from "./pages/contact/Contact";
 import Goals from "./pages/goals/Goals";
 import NavigationBar from "./components/navigationBar/NavigationBar";
 import Footer from "./components/footer/Footer";
 import TeamDetail from "./pages/team/teamDetail/TeamDetail";
 import Projects from "./pages/projects/Projects";
 import ProjectsDetail from "./pages/projects/projectsDetail/ProjectsDetail";
+import ScrollToTop from "./components/scrollToTop/ScrollToTop";
 
 export default function Routes() {
   const routes = createBrowserRouter([
@@ -21,6 +21,7 @@ export default function Routes() {
       path: "/",
       element: (
         <>
+          <ScrollToTop />
           <NavigationBar />
           <Outlet />
           <Footer />
@@ -60,11 +61,6 @@ export default function Routes() {
         {
           path: "/apply",
           element: <Apply />,
-          children: [],
-        },
-        {
-          path: "/contact",
-          element: <Contact />,
           children: [],
         },
       ],

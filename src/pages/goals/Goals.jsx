@@ -1,23 +1,37 @@
 import { useEffect, useState } from "react";
 import components from "./config";
 import GoalsBubble from "./bubbles/GoalsBubble";
+import { useViewport } from "../../context/viewportContext";
 import "./style.css";
 
 function Goals() {
   const [showGoal1, setShowGoal1] = useState(false);
   const [showGoal2, setShowGoal2] = useState(false);
   const [showGoal3, setShowGoal3] = useState(false);
+  const { width } = useViewport();
 
   useEffect(() => {
     function handleScroll() {
-      if (window.scrollY > 500) {
-        setShowGoal1(true);
-      }
-      if (window.scrollY > 1000) {
-        setShowGoal2(true);
-      }
-      if (window.scrollY > 1500) {
-        setShowGoal3(true);
+      if (width > 768) {
+        if (window.scrollY > 500) {
+          setShowGoal1(true);
+        }
+        if (window.scrollY > 1000) {
+          setShowGoal2(true);
+        }
+        if (window.scrollY > 1500) {
+          setShowGoal3(true);
+        }
+      } else {
+        if (window.scrollY > 100) {
+          setShowGoal1(true);
+        }
+        if (window.scrollY > 500) {
+          setShowGoal2(true);
+        }
+        if (window.scrollY > 900) {
+          setShowGoal3(true);
+        }
       }
     }
     window.addEventListener("scroll", handleScroll);
@@ -56,7 +70,6 @@ function Goals() {
           {components[2].text}
         </div>
       </div>
-      <div className="goalsSpacer" />
     </div>
   );
 }

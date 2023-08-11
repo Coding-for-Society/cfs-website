@@ -5,6 +5,7 @@ import ApplyBubble3 from "./bubbles/ApplyBubble3";
 import ApplyBubble4 from "./bubbles/ApplyBubble4";
 import PositionsList from "../../components/positionsList/PositionsList";
 import FaqList from "../../components/faqList/FaqList";
+import { useViewport } from "../../context/viewportContext";
 import { positionsConfig, faqConfig } from "../../config";
 import "./style.css";
 
@@ -14,7 +15,8 @@ function Apply() {
     ? positionsConfig
     : positionsConfig.filter((position) => position.team === activeFilter);
   const numPositions = filteredPositions.length;
-  const spacerHeight = `max(calc(${numPositions} * 90px), 300px)`;
+  const { width } = useViewport();
+  const spacerHeight = `max(calc(${numPositions} * ${width < 1200 ? 120 : 90}px), 300px)`;
   const containerHeight = `calc(2400px + ${spacerHeight})`;
   const pageHeight = `calc(900px + ${containerHeight})`;
 
@@ -25,11 +27,15 @@ function Apply() {
         <ApplyBubble1 className="applytitleBubble" preserveAspectRatio="none" />
       </div>
       <div className="arrowContainer">
-        {window.innerHeight < 1200 && <ArrowIcon />}
+        {window.innerHeight < 1200 && (
+          <a href="#positions">
+            <ArrowIcon />
+          </a>
+        )}
       </div>
       <div className="positionsContainer">
         <div className="positionsText">
-          <h2>Open positions</h2>
+          <h2 id="positions">Open positions</h2>
           <div className="filter-buttons">
             <button
               type="button"
